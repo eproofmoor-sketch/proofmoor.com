@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -6,18 +7,18 @@
         <meta name="viewport" content="width=device-width">
         <meta name="generator" content="Framer 8f9ffef">
         <title>Cumulus - Cloud Computing</title>
-        <meta name="description" content="Cloud Solutions for a Connected World">
+        <meta name="description" content="Proofmoor - Empowering your brand’s online journey">
         <meta name="framer-search-index" content="https://framerusercontent.com/sites/4ySiH1lcsi38LmBtUkuCdf/searchIndex-NlnSv4uSEgpm.json">
         <link href="https://framerusercontent.com/images/kyYfkHDvL4CBTT4tAeYbCltRcg.png" rel="icon" media="(prefers-color-scheme: light)">
         <link href="https://framerusercontent.com/images/SFfP9GrrvswowFRSISv2K0DtohM.png" rel="icon" media="(prefers-color-scheme: dark)">
 
         <meta property="og:type" content="website">
         <meta property="og:title" content="Cumulus - Cloud Computing">
-        <meta property="og:description" content="Cloud Solutions for a Connected World">
+        <meta property="og:description" content="Proofmoor - Empowering your brand’s online journey">
 
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Cumulus - Cloud Computing">
-        <meta name="twitter:description" content="Cloud Solutions for a Connected World">
+        <meta name="twitter:description" content="Proofmoor - Empowering your brand’s online journey">
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <meta name="robots" content="max-image-preview:large">
         <link rel="canonical" href="https://cumulus.framer.website/">
@@ -29,6 +30,11 @@
           #services [data-framer-name="The Key Benefits of Partnering"] {
             opacity: 0.001;
           }
+
+      [data-framer-name="brandi-collaboration"],
+      [data-framer-name="Clients Section"] {
+        display: none !important;
+      }
         </style>
 
         <style>
@@ -6281,7 +6287,7 @@
 
         <script>
           document.addEventListener('DOMContentLoaded', function() {
-            const WA_LINK = 'https://wa.me/88013340771';
+            const WA_LINK = 'https://api.whatsapp.com/send/?phone=8801334077132';
             let attempts = 0;
             const interval = setInterval(() => {
 
@@ -6295,10 +6301,7 @@
                 btn.setAttribute('target', '_blank');
 
                 btn.onclick = null;
-                btn.addEventListener('click', function(e) {
-                  e.preventDefault();
-                  window.open(WA_LINK, '_blank');
-                });
+
               });
 
               const navButtons = document.querySelectorAll('.framer-jwbgh6-container a[data-reset="button"]');
@@ -6309,11 +6312,9 @@
                 }
                 btn.setAttribute('href', WA_LINK);
                 btn.setAttribute('target', '_blank');
+
                 btn.onclick = null;
-                btn.addEventListener('click', function(e) {
-                  e.preventDefault();
-                  window.open(WA_LINK, '_blank');
-                });
+
               });
 
               const ctaHeadings = document.querySelectorAll('[data-framer-name="Call to Action Heading"] h3');
@@ -6333,9 +6334,11 @@
         </script>
 
         <style>
+
           [data-framer-name="card"] h5 {
-            display: none !important;
+            display: block !important;
           }
+
           [data-framer-name="card"] [data-framer-name="icon"] {
             visibility: hidden;
           }
@@ -6343,40 +6346,54 @@
 
         <script>
           document.addEventListener('DOMContentLoaded', function() {
+
             const titles = [
+
               'Facebook & Instagram Account Verification',
               'Facebook & Instagram Page Verification',
-              'Hacked ID Recovery',
               'WhatsApp Business Verification',
+              'Ads Account Verification',
               'Business Manager Verification',
-              'Suspended ID Recovery'
+              'Suspended ID Recovery',
             ];
+
             const icons = [
-              '/img/Facebook & Instagram Account Verification.jpg',
-              '/img/Facebook & Instagram Page Verification.jpg',
-              '/img/Hacked ID Recovery.jpg',
-              '/img/WhatsApp Business Verification.jpg',
-              '/img/Business Manager Verification.jpg',
-              '/img/Suspended ID Recovery.jpg'
+              'images/facebook-instagram-account-verification.png',
+              'images/facebook-instagram-page-verification.png',
+              'images/whatsapp-business-verification.png',
+              'images/ads-account-verification.png',
+              'images/business-manager-verification.png',
+              'images/suspended-id-recovery.png',
             ];
+
             function updateCards() {
               const cards = document.querySelectorAll('[data-framer-name="card"]');
-              if (!cards || cards.length < titles.length) return false;
+              if (!cards || cards.length === 0) return false;
               titles.forEach((title, i) => {
                 const card = cards[i];
                 if (!card) return;
+
                 const h5 = card.querySelector('h5');
-                if (h5) h5.textContent = title;
+                if (h5) {
+                  h5.textContent = title;
+                  h5.style.display = 'block';
+                }
+
                 const iconContainer = card.querySelector('[data-framer-name="icon"]');
                 if (iconContainer) {
+
                   iconContainer.innerHTML = '';
                   const img = document.createElement('img');
-                  img.src = icons[i];
+
+                  img.src = icons[i] || '';
+
                   img.alt = title + ' icon';
 
                   img.style.width = '200px';
-                  img.style.height = '200px';
+                  img.style.height = 'auto';
                   img.style.objectFit = 'contain';
+                  img.style.display = 'block';
+
                   iconContainer.appendChild(img);
 
                   iconContainer.style.visibility = 'visible';
@@ -6429,17 +6446,17 @@
                                 <div class="framer-1ivb1ph" data-framer-appear-id="1ivb1ph" data-framer-name="A trusted global agency for social media verification, account recovery, and brand protection." style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;opacity:0.001;flex-shrink:0;transform:translateY(50px)" data-framer-component-type="RichTextContainer">
                                     <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-alignment:center">A trusted global agency for social media verification, account recovery, and brand protection.</p>
                                 </div>
-                            </div>
-                            <div class="framer-3x0jm8" data-framer-appear-id="3x0jm8" data-framer-name="Rating Container" style="opacity:0.001;transform:translateY(50px)">
-                                <div data-framer-component-type="SVG" data-framer-name="Stars Container" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-1rr1t11" aria-hidden="true">
-                                    <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
-                                        <svg style="width:100%;height:100%;" viewBox="0 0 149 20">
-                                            <use href="#svg-306573118_6397"/>
-                                        </svg>
+                                <div class="framer-3x0jm8" data-framer-appear-id="3x0jm8" data-framer-name="Rating Container" style="opacity:0.001;transform:translateY(50px)">
+                                    <div data-framer-component-type="SVG" data-framer-name="Stars Container" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-1rr1t11" aria-hidden="true">
+                                        <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
+                                            <svg style="width:100%;height:100%;" viewBox="0 0 149 20">
+                                                <use href="#svg-306573118_6397"/>
+                                            </svg>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="framer-1qr6yxt" data-framer-name="Rating Text" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
-                                    <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy">1k+ Happy Customers</p>
+                                    <div class="framer-1qr6yxt" data-framer-name="Rating Text" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
+                                        <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy">1k+ Happy Customers</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="framer-1hq95x5-container">
@@ -7018,21 +7035,7 @@
                             </div>
                         </div>
                     </section>
-                    <div class="framer-15zill5-container" data-framer-name="brandi-collaboration" name="brandi-collaboration">
 
-                        <section style="display:flex;width:100%;height:100%;max-width:100%;max-height:100%;place-items:center;margin:0;padding:10px;list-style-type:none;text-indent:none;opacity:0;-webkit-mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12.5%, rgba(0, 0, 0, 1) 87.5%, rgba(0, 0, 0, 0) 100%);mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12.5%, rgba(0, 0, 0, 1) 87.5%, rgba(0, 0, 0, 0) 100%);overflow:hidden">
-                            <ul style="display:flex;width:100%;height:100%;max-width:100%;max-height:100%;place-items:center;margin:0;padding:0;list-style-type:none;text-indent:none;gap:0;position:relative;flex-direction:row;will-change:auto;transform:translateX(0px)">
-                                <li>
-                                    <div class="framer-orx8fy" data-framer-name="Clients Section" style="flex-shrink:0">
-                                        <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0" data-framer-background-image-wrapper="true">
-                                            <img decoding="async" width="1280" height="77" sizes="(min-width: 1200px) 1200px, (min-width: 810px) and (max-width: 1199px) 1200px, (max-width: 809px) 1200px" srcset="https://framerusercontent.com/images/U70sK8Zdep8vn5cLGfAzKKBU3yc.svg?scale-down-to=512 512w,https://framerusercontent.com/images/U70sK8Zdep8vn5cLGfAzKKBU3yc.svg?scale-down-to=1024 1024w,https://framerusercontent.com/images/U70sK8Zdep8vn5cLGfAzKKBU3yc.svg 1280w" src="https://framerusercontent.com/images/U70sK8Zdep8vn5cLGfAzKKBU3yc.svg" alt style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:contain" data-framer-original-sizes="1200px">
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-
-                    </div>
                     <section class="framer-p740t7" data-framer-name="services-section" id="services">
                         <div class="framer-crcqnb" data-framer-name="text-heading">
                             <div class="ssr-variant hidden-x89b52 hidden-1t8geif">
@@ -7070,8 +7073,8 @@
                         </div>
                         <div class="framer-y6tthy" data-framer-name="card-container">
                             <div class="framer-11sdx12" data-framer-name="card" style="will-change:transform;opacity:0;transform:translateY(50px)">
-                                <div class="framer-1h01xa3" data-framer-name="Infrastructure as a Service (IaaS)" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
-                                    <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-alignment:center">Infrastructure as a Service (IaaS)</h5>
+<div class="framer-1h01xa3" data-framer-name="Facebook &amp; Instagram Account Verification" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
+                                <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-alignment:center">Facebook &amp; Instagram Account Verification</h5>
                                 </div>
                                 <div class="framer-1mlqsd5" data-framer-name="icon">
                                     <div data-framer-component-type="SVG" data-framer-name="line" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-1q0nbzl" aria-hidden="true">
@@ -7098,8 +7101,8 @@
                                 </div>
                             </div>
                             <div class="framer-a3lcw4" data-border="true" data-framer-name="card" style="will-change:transform;opacity:0;transform:translateY(50px)">
-                                <div class="framer-1j2p03p" data-framer-name="Infrastructure as a Service (IaaS)" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
-                                    <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-alignment:center">Platform as a Service (PaaS)</h5>
+<div class="framer-1j2p03p" data-framer-name="Facebook &amp; Instagram Page Verification" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
+                                <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-alignment:center">Facebook &amp; Instagram Page Verification</h5>
                                 </div>
                                 <div class="framer-dqmpzw" data-framer-name="icon">
                                     <div data-framer-component-type="SVG" data-framer-name="line" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-1b994yf" aria-hidden="true">
@@ -7126,8 +7129,8 @@
                                 </div>
                             </div>
                             <div class="framer-17gud1z" data-border="true" data-framer-name="card" style="will-change:transform;opacity:0;transform:translateY(50px)">
-                                <div class="framer-mjm7ji" data-framer-name="Infrastructure as a Service (IaaS)" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
-                                    <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-alignment:center">Cloud Security Services</h5>
+<div class="framer-mjm7ji" data-framer-name="WhatsApp Business Verification" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
+                                <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-alignment:center">WhatsApp Business Verification</h5>
                                 </div>
                                 <div class="framer-1iydr24" data-framer-name="icon">
                                     <div data-framer-component-type="SVG" data-framer-name="line" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-qhktpt" aria-hidden="true">
@@ -7154,8 +7157,8 @@
                                 </div>
                             </div>
                             <div class="framer-xt50y5" data-border="true" data-framer-name="card" style="will-change:transform;opacity:0;transform:translateY(50px)">
-                                <div class="framer-nb3og3" data-framer-name="Infrastructure as a Service (IaaS)" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
-                                    <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-alignment:center">Software as a Service (SaaS)</h5>
+<div class="framer-nb3og3" data-framer-name="Ads Account Verification" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
+                                <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-alignment:center">Ads Account Verification</h5>
                                 </div>
                                 <div class="framer-faez2" data-framer-name="icon">
                                     <div data-framer-component-type="SVG" data-framer-name="line" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-17u63y5" aria-hidden="true">
@@ -7182,8 +7185,8 @@
                                 </div>
                             </div>
                             <div class="framer-83qc44" data-border="true" data-framer-name="card" style="will-change:transform;opacity:0;transform:translateY(50px)">
-                                <div class="framer-1h6lmcz" data-framer-name="Infrastructure as a Service (IaaS)" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
-                                    <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-alignment:center">Cloud Migration Services</h5>
+<div class="framer-1h6lmcz" data-framer-name="Business Manager Verification" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
+                                <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-alignment:center">Business Manager Verification</h5>
                                 </div>
                                 <div class="framer-1ccyvpc" data-framer-name="icon">
                                     <div data-framer-component-type="SVG" data-framer-name="line" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-1ntpwga" aria-hidden="true">
@@ -7210,8 +7213,8 @@
                                 </div>
                             </div>
                             <div class="framer-16hwudd" data-border="true" data-framer-name="card" style="will-change:transform;opacity:0;transform:translateY(50px)">
-                                <div class="framer-gs0bzk" data-framer-name="Infrastructure as a Service (IaaS)" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
-                                    <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-alignment:center">Cloud Migration Services</h5>
+<div class="framer-gs0bzk" data-framer-name="Suspended ID Recovery" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none" data-framer-component-type="RichTextContainer">
+                                <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-alignment:center">Suspended ID Recovery</h5>
                                 </div>
                                 <div class="framer-1piz44v" data-framer-name="icon">
                                     <div data-framer-component-type="SVG" data-framer-name="line" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-8f0mao" aria-hidden="true">
@@ -9079,7 +9082,7 @@
 
                                 <div class="framer-jwbgh6-container">
 
-                                    <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://wa.me/88013340771" target="_blank" tabindex="0">
+                                    <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://api.whatsapp.com/send/?phone=8801334077132" target="_blank" tabindex="0">
 
                                         <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(255, 255, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                             <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:rgb(255, 255, 255)">Contact Now</p>
@@ -9170,7 +9173,7 @@
 
                                 <div class="framer-jwbgh6-container">
 
-                                    <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://wa.me/88013340771" target="_blank" tabindex="0">
+                                    <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://api.whatsapp.com/send/?phone=8801334077132" target="_blank" tabindex="0">
                                         <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                             <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Contact Now</p>
                                         </div>
@@ -9216,7 +9219,7 @@
 
                                             <div class="framer-1romxpz-container">
 
-                                                <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://wa.me/88013340771" target="_blank" tabindex="0">
+                                                <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://api.whatsapp.com/send/?phone=8801334077132" target="_blank" tabindex="0">
                                                     <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Contact Now</p>
                                                     </div>
@@ -9269,7 +9272,7 @@
 
                                             <div class="framer-1romxpz-container">
 
-                                                <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://wa.me/88013340771" target="_blank" tabindex="0">
+                                                <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://api.whatsapp.com/send/?phone=8801334077132" target="_blank" tabindex="0">
                                                     <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Contact Now</p>
                                                     </div>
@@ -9322,7 +9325,7 @@
 
                                             <div class="framer-1romxpz-container">
 
-                                                <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://wa.me/88013340771" target="_blank" tabindex="0">
+                                                <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://api.whatsapp.com/send/?phone=8801334077132" target="_blank" tabindex="0">
                                                     <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Contact Now</p>
                                                     </div>
@@ -9440,15 +9443,41 @@
                                                                 </svg>
                                                             </div>
                                                         </div>
-                                                        <div class="framer-1ktwgzr" data-framer-name="613 Orange Well, NJ USA" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
+                                                    <div class="framer-1ktwgzr" data-framer-name="Madhabdi, Dhaka Division" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
 
-                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="https://www.google.com/maps" target="_blank" rel="noopener">613 Orange Well, NJ USA</a>
+                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="https://maps.app.goo.gl/Zvy9SaYb3yzSv6Jo6?g_st=ac" target="_blank" rel="noopener">Madhabdi, Dhaka Division</a>
 
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <div class="framer-eg4xpl" data-framer-name="email">
+
+                                                    <div class="custom-email-row" style="display:flex;align-items:center;gap:12px;margin-top:8px;">
+                                                        <div class="email-icon-box" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.6);border-radius:6px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.659 2C19.989 2 22.5 4.717 22.5 8.32V15.188C22.5 17.032 21.848 18.698 20.663 19.88C19.6 20.939 18.221 21.5 16.675 21.5H6.822C5.279 21.5 3.901 20.94 2.837 19.88C1.652 18.698 1 17.032 1 15.188V8.32C1 4.717 3.511 2 6.841 2H16.659ZM16.659 3.5H6.841C4.326 3.5 2.5 5.527 2.5 8.32V15.188C2.5 16.631 2.996 17.92 3.896 18.817C4.672 19.592 5.685 20 6.825 20H16.659C16.661 19.998 16.669 20 16.675 20C17.816 20 18.828 19.592 19.604 18.817C20.505 17.92 21 16.631 21 15.188V8.32C21 5.527 19.174 3.5 16.659 3.5ZM18.235 8.1288C18.496 8.4498 18.447 8.9218 18.126 9.1838L13.682 12.7958C13.12 13.2418 12.448 13.4648 11.777 13.4648C11.108 13.4648 10.441 13.2438 9.883 12.8018L5.398 9.1858C5.075 8.9258 5.025 8.4528 5.284 8.1308C5.545 7.8098 6.017 7.7588 6.339 8.0178L10.82 11.6298C11.383 12.0758 12.176 12.0758 12.743 11.6258L17.179 8.0198C17.501 7.7568 17.973 7.8068 18.235 8.1288Z" fill="white"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <a href="mailto:contact@proofmoor.com" style="color:white;text-decoration:none;font-size:16px;">contact@proofmoor.com</a>
+                                                    </div>
+
+                                                    <div class="framer-eg4xpl" data-framer-name="email-custom" style="display:none;">
+                                                        <div data-framer-component-type="SVG" data-framer-name="Message" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-13d6sxm" aria-hidden="true">
+                                                            <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
+                                                                <svg style="width:100%;height:100%;" viewBox="0 0 24 24">
+                                                                    <use href="#svg217510220_1034"/>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="framer-nn00vs" data-framer-name="custom-email" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
+                                                            <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
+
+                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="mailto:contact@proofmoor.com" target="_blank" rel="noopener">contact@proofmoor.com</a>
+
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="framer-eg4xpl" data-framer-name="email" style="display:none;">
                                                         <div data-framer-component-type="SVG" data-framer-name="Message" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-13d6sxm" aria-hidden="true">
                                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
                                                                 <svg style="width:100%;height:100%;" viewBox="0 0 24 24">
@@ -9459,7 +9488,7 @@
                                                         <div class="framer-nn00vs" data-framer-name="carepoint@domain.com" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
 
-                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="mailto:" target="_blank" rel="noopener">cumulus@domain.com</a>
+                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="mailto:" target="_blank" rel="noopener">contact@proofmoor.com</a>
 
                                                             </p>
                                                         </div>
@@ -9475,8 +9504,8 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="framer-jz1m6w" data-framer-name="copyright 2025 @carepoint All Right Reserved" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
-                                        <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">copyright 2025 @cumulus All Right Reserved</p>
+                                    <div class="framer-jz1m6w" data-framer-name="copyright 2025 @Proofmoor All Right Reserved" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
+                                        <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">copyright 2025 @Proofmoor All Right Reserved</p>
                                     </div>
                                 </div>
                             </footer>
@@ -9576,15 +9605,24 @@
                                                                 </svg>
                                                             </div>
                                                         </div>
-                                                        <div class="framer-1ktwgzr" data-framer-name="613 Orange Well, NJ USA" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
+                                                        <div class="framer-1ktwgzr" data-framer-name="Madhabdi, Dhaka Division" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
 
-                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="https://www.google.com/maps" target="_blank" rel="noopener">613 Orange Well, NJ USA</a>
+                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="https://maps.app.goo.gl/Zvy9SaYb3yzSv6Jo6?g_st=ac" target="_blank" rel="noopener">Madhabdi, Dhaka Division</a>
 
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <div class="framer-eg4xpl" data-framer-name="email">
+
+                                                    <div class="custom-email-row" style="display:flex;align-items:center;gap:12px;margin-top:8px;">
+                                                        <div class="email-icon-box" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.6);border-radius:6px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.659 2C19.989 2 22.5 4.717 22.5 8.32V15.188C22.5 17.032 21.848 18.698 20.663 19.88C19.6 20.939 18.221 21.5 16.675 21.5H6.822C5.279 21.5 3.901 20.94 2.837 19.88C1.652 18.698 1 17.032 1 15.188V8.32C1 4.717 3.511 2 6.841 2H16.659ZM16.659 3.5H6.841C4.326 3.5 2.5 5.527 2.5 8.32V15.188C2.5 16.631 2.996 17.92 3.896 18.817C4.672 19.592 5.685 20 6.825 20H16.659C16.661 19.998 16.669 20 16.675 20C17.816 20 18.828 19.592 19.604 18.817C20.505 17.92 21 16.631 21 15.188V8.32C21 5.527 19.174 3.5 16.659 3.5ZM18.235 8.1288C18.496 8.4498 18.447 8.9218 18.126 9.1838L13.682 12.7958C13.12 13.2418 12.448 13.4648 11.777 13.4648C11.108 13.4648 10.441 13.2438 9.883 12.8018L5.398 9.1858C5.075 8.9258 5.025 8.4528 5.284 8.1308C5.545 7.8098 6.017 7.7588 6.339 8.0178L10.82 11.6298C11.383 12.0758 12.176 12.0758 12.743 11.6258L17.179 8.0198C17.501 7.7568 17.973 7.8068 18.235 8.1288Z" fill="white"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <a href="mailto:contact@proofmoor.com" style="color:white;text-decoration:none;font-size:16px;">contact@proofmoor.com</a>
+                                                    </div>
+                                                    <div class="framer-eg4xpl" data-framer-name="email" style="display:none;">
                                                         <div data-framer-component-type="SVG" data-framer-name="Message" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-13d6sxm" aria-hidden="true">
                                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
                                                                 <svg style="width:100%;height:100%;" viewBox="0 0 24 24">
@@ -9595,7 +9633,7 @@
                                                         <div class="framer-nn00vs" data-framer-name="carepoint@domain.com" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
 
-                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="mailto:" target="_blank" rel="noopener">cumulus@domain.com</a>
+                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="mailto:" target="_blank" rel="noopener">contact@proofmoor.com</a>
 
                                                             </p>
                                                         </div>
@@ -9611,8 +9649,8 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="framer-jz1m6w" data-framer-name="copyright 2025 @carepoint All Right Reserved" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
-                                        <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">copyright 2025 @cumulus All Right Reserved</p>
+                                    <div class="framer-jz1m6w" data-framer-name="copyright 2025 @Proofmoor All Right Reserved" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
+                                        <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">copyright 2025 @Proofmoor All Right Reserved</p>
                                     </div>
                                 </div>
                             </footer>
@@ -9712,15 +9750,24 @@
                                                                 </svg>
                                                             </div>
                                                         </div>
-                                                        <div class="framer-1ktwgzr" data-framer-name="613 Orange Well, NJ USA" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
+                                                        <div class="framer-1ktwgzr" data-framer-name="Madhabdi, Dhaka Division" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
 
-                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="https://www.google.com/maps" target="_blank" rel="noopener">613 Orange Well, NJ USA</a>
+                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="https://maps.app.goo.gl/Zvy9SaYb3yzSv6Jo6?g_st=ac" target="_blank" rel="noopener">Madhabdi, Dhaka Division</a>
 
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <div class="framer-eg4xpl" data-framer-name="email">
+
+                                                    <div class="custom-email-row" style="display:flex;align-items:center;gap:12px;margin-top:8px;">
+                                                        <div class="email-icon-box" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.6);border-radius:6px;">
+                                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.659 2C19.989 2 22.5 4.717 22.5 8.32V15.188C22.5 17.032 21.848 18.698 20.663 19.88C19.6 20.939 18.221 21.5 16.675 21.5H6.822C5.279 21.5 3.901 20.94 2.837 19.88C1.652 18.698 1 17.032 1 15.188V8.32C1 4.717 3.511 2 6.841 2H16.659ZM16.659 3.5H6.841C4.326 3.5 2.5 5.527 2.5 8.32V15.188C2.5 16.631 2.996 17.92 3.896 18.817C4.672 19.592 5.685 20 6.825 20H16.659C16.661 19.998 16.669 20 16.675 20C17.816 20 18.828 19.592 19.604 18.817C20.505 17.92 21 16.631 21 15.188V8.32C21 5.527 19.174 3.5 16.659 3.5ZM18.235 8.1288C18.496 8.4498 18.447 8.9218 18.126 9.1838L13.682 12.7958C13.12 13.2418 12.448 13.4648 11.777 13.4648C11.108 13.4648 10.441 13.2438 9.883 12.8018L5.398 9.1858C5.075 8.9258 5.025 8.4528 5.284 8.1308C5.545 7.8098 6.017 7.7588 6.339 8.0178L10.82 11.6298C11.383 12.0758 12.176 12.0758 12.743 11.6258L17.179 8.0198C17.501 7.7568 17.973 7.8068 18.235 8.1288Z" fill="white"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <a href="mailto:contact@proofmoor.com" style="color:white;text-decoration:none;font-size:16px;">contact@proofmoor.com</a>
+                                                    </div>
+                                                    <div class="framer-eg4xpl" data-framer-name="email" style="display:none;">
                                                         <div data-framer-component-type="SVG" data-framer-name="Message" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-13d6sxm" aria-hidden="true">
                                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
                                                                 <svg style="width:100%;height:100%;" viewBox="0 0 24 24">
@@ -9731,7 +9778,7 @@
                                                         <div class="framer-nn00vs" data-framer-name="carepoint@domain.com" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
 
-                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="mailto:" target="_blank" rel="noopener">cumulus@domain.com</a>
+                                                                <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="mailto:" target="_blank" rel="noopener">contact@proofmoor.com</a>
 
                                                             </p>
                                                         </div>
@@ -9747,8 +9794,8 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="framer-jz1m6w" data-framer-name="copyright 2025 @carepoint All Right Reserved" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
-                                        <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">copyright 2025 @cumulus All Right Reserved</p>
+                                    <div class="framer-jz1m6w" data-framer-name="copyright 2025 @Proofmoor All Right Reserved" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
+                                        <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">copyright 2025 @Proofmoor All Right Reserved</p>
                                     </div>
                                 </div>
                             </footer>
@@ -11974,6 +12021,80 @@
         });
       })();
     </script>
+    <script>
+      (function() {
+        const newPhoneNumber = '+8801334077132';
+        const newWhatsAppNumber = '8801334077132';
+        function updateLinks() {
+
+          document.querySelectorAll('a[href^="tel"]').forEach(function(a) {
+            a.setAttribute('href', 'tel:' + newPhoneNumber);
+            a.textContent = newPhoneNumber;
+          });
+
+          document.querySelectorAll('a[href^="https://wa.me/"], a[href^="https://api.whatsapp.com/"]').forEach(function(a) {
+            a.setAttribute('href', 'https://api.whatsapp.com/send/?phone=' + newWhatsAppNumber);
+          });
+        }
+
+        function insertHeroContactButton() {
+
+          let anchorTarget = document.querySelector('[data-framer-name="Rating Container"]');
+          let parent;
+          if (anchorTarget) {
+            parent = anchorTarget.parentElement;
+          } else {
+            anchorTarget = document.querySelector('[data-framer-name^="A trusted global agency"]');
+            if (!anchorTarget) return;
+            parent = anchorTarget.parentElement;
+          }
+          if (!parent) return;
+
+          if (parent.querySelector('.framer-hero-contact-small-dynamic')) return;
+
+          const wrapper = document.createElement('div');
+          wrapper.className = 'framer-hero-contact-small-dynamic';
+          wrapper.style.display = 'flex';
+          wrapper.style.justifyContent = 'center';
+          wrapper.style.marginTop = '16px';
+          wrapper.style.width = '100%';
+
+          const anchorEl = document.createElement('a');
+          anchorEl.href = 'https://api.whatsapp.com/send/?phone=' + newWhatsAppNumber;
+          anchorEl.target = '_blank';
+          anchorEl.rel = 'noopener';
+          anchorEl.textContent = 'Contact Now';
+          anchorEl.style.display = 'inline-flex';
+          anchorEl.style.alignItems = 'center';
+          anchorEl.style.justifyContent = 'center';
+          anchorEl.style.padding = '8px 20px';
+          anchorEl.style.borderRadius = '10px';
+          anchorEl.style.background = 'linear-gradient(180deg, rgba(0, 82, 255, 1) 0%, rgba(0, 64, 209, 1) 100%)';
+          anchorEl.style.color = '#FFFFFF';
+          anchorEl.style.fontFamily = 'inherit';
+          anchorEl.style.fontSize = '16px';
+          anchorEl.style.fontWeight = '600';
+          anchorEl.style.textDecoration = 'none';
+          anchorEl.style.boxShadow = '0 0 0 2px rgba(255,255,255,0.25) inset';
+          wrapper.appendChild(anchorEl);
+
+          parent.insertBefore(wrapper, anchorTarget);
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+
+          let attempts = 0;
+          const intervalId = setInterval(function() {
+            updateLinks();
+            insertHeroContactButton();
+            attempts++;
+
+            if (attempts > 10) {
+              clearInterval(intervalId);
+            }
+          }, 500);
+        });
+      })();
+    </script>
 
     <script>
       (function() {
@@ -12076,5 +12197,519 @@
         });
       })();
     </script>
-    </body>
+
+    <script>
+      (function() {
+        const newLocationName = 'Madhabdi, Dhaka Division';
+        const newLocationLink = 'https://maps.app.goo.gl/Zvy9SaYb3yzSv6Jo6?g_st=ac';
+        function updateLocationLinks() {
+
+          document.querySelectorAll('a[href*="google.com/maps"]').forEach(function(a) {
+            a.setAttribute('href', newLocationLink);
+            a.textContent = newLocationName;
+          });
+        }
+
+        function updateFooterLocation() {
+          const patterns = /(Orange\s+Well|NJ\s+USA|613\s+Orange)/i;
+          ['a','span','p','div'].forEach(function(tag) {
+            document.querySelectorAll(tag).forEach(function(el) {
+              const text = (el.textContent || '').trim();
+              if (patterns.test(text)) {
+                el.textContent = newLocationName;
+                if (el.tagName.toLowerCase() === 'a') {
+                  el.setAttribute('href', newLocationLink);
+                }
+              }
+            });
+          });
+        }
+
+        function updateLocationRows() {
+          document.querySelectorAll('[data-framer-name="Location"]').forEach(function(icon) {
+
+            const row = icon.closest('[data-framer-name="location"]');
+            if (!row) return;
+
+            const anchor = row.querySelector('a');
+            if (anchor) {
+              anchor.setAttribute('href', newLocationLink);
+              anchor.textContent = newLocationName;
+              return;
+            }
+
+            const candidates = row.querySelectorAll('span, p, div');
+            for (const el of candidates) {
+              const txt = (el.textContent || '').trim();
+              if (txt) {
+                const a = document.createElement('a');
+                a.setAttribute('href', newLocationLink);
+                a.setAttribute('target', '_blank');
+                a.setAttribute('rel', 'noopener');
+                a.textContent = newLocationName;
+                while (el.firstChild) el.removeChild(el.firstChild);
+                el.appendChild(a);
+                break;
+              }
+            }
+          });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+          updateLocationLinks();
+          updateFooterLocation();
+          updateLocationRows();
+
+          setTimeout(function() {
+            updateLocationLinks();
+            updateFooterLocation();
+            updateLocationRows();
+          }, 1000);
+        });
+      })();
+    </script>
+
+    <div id="custom-content" style="display:none">
+
+      <div id="hero-heading-line1">Proof Empowers</div>
+      <div id="hero-heading-line2">Every Connection</div>
+      <div id="hero-tagline">A trusted global agency for social media verification, account recovery, and brand protection.</div>
+
+      <div id="about-heading">About Our Social Media Security &amp; Brand Protection Solutions</div>
+      <div id="about-paragraph">At Proofmoor, we are dedicated to protecting and empowering your digital presence. With years of expertise in social media verification, account recovery, and brand protection, our team ensures your reputation stays secure and your growth unstoppable.</div>
+
+      <div id="services-heading">Explore Our Services</div>
+
+      <div id="cloud-services-items">Facebook &amp; Instagram Account Verification; Facebook &amp; Instagram Page Verification; WhatsApp Business Verification; Ads Account Verification; Business Manager Verification; Suspended ID Recovery</div>
+
+      <div id="phone-number">+8801334077132</div>
+      <div id="whatsapp-number">8801334077132</div>
+
+      <div id="location-name">Madhabdi, Dhaka Division</div>
+      <div id="location-link">https:
+
+      <div id="services-items">Facebook &amp; Instagram Page Verification; Business Manager Verification; Ads Account Verification; WhatsApp Business Verification; Hacked ID Recovery; Suspended ID Recovery</div>
+
+      <div id="contact-email">contact@proofmoor.com</div>
+
+      <div id="footer-headline">Recover. Verify. Grow.</div>
+
+      <div id="footer-slogan">Empowering your brand’s online journey.</div>
+
+      <div id="cta-heading">Recover, Verify &amp; Protect All In One Place !</div>
+
+      <div id="cta-subheading">Secure your online identity with our expert verification &amp; recovery services.</div>
+
+      <div id="cta-note">For consultation and inquiry</div>
+    <div id="footer-copyright">copyright 2025 @proofmoor All Right Reserved</div>
+    </div>
+
+    <script>
+      (function() {
+        document.addEventListener('DOMContentLoaded', function() {
+
+          const pollInterval = 500;
+          let attempts = 0;
+          const maxAttempts = 40; 
+          const intervalId = setInterval(() => {
+            attempts++;
+
+            const getText = id => {
+              const el = document.getElementById(id);
+              return el ? (el.textContent || '').trim() : '';
+            };
+            const heroLine1 = getText('hero-heading-line1');
+            const heroLine2 = getText('hero-heading-line2');
+            const heroTagline = getText('hero-tagline');
+            const aboutHeading = getText('about-heading');
+            const aboutParagraph = getText('about-paragraph');
+            const servicesHeading = getText('services-heading');
+            const phoneNumber = getText('phone-number');
+            const whatsappNumber = getText('whatsapp-number');
+            const locationName = getText('location-name');
+            const locationLink = getText('location-link');
+            const servicesItemsRaw = getText('services-items');
+            const servicesItems = servicesItemsRaw
+              ? servicesItemsRaw.split(';').map(item => item.trim()).filter(Boolean)
+              : [];
+
+            const contactEmail = getText('contact-email');
+            const footerHeadline = getText('footer-headline');
+            const footerSlogan = getText('footer-slogan');
+            const ctaHeadingVal = getText('cta-heading');
+            const ctaSubheadingVal = getText('cta-subheading');
+            const ctaNoteVal = getText('cta-note');
+
+            const hero = document.getElementById('hero') || document.querySelector('.framer-zy3kcc');
+            if (hero) {
+              const headings = hero.querySelectorAll('h1');
+              if (headings && headings.length > 0) {
+                if (headings.length === 1) {
+
+                  const span = headings[0].querySelector('span') || headings[0];
+                  span.textContent = `${heroLine1} ${heroLine2}`.trim();
+                } else {
+
+                  const h1span = headings[0].querySelector('span') || headings[0];
+                  h1span.textContent = heroLine1;
+                  const h2span = headings[1].querySelector('span') || headings[1];
+                  h2span.textContent = heroLine2;
+                }
+
+                const container = hero.querySelector('.framer-171bq6o');
+                if (container) container.style.visibility = 'visible';
+              }
+
+              const taglineContainer = hero.querySelector('.framer-1ivb1ph');
+              if (taglineContainer) {
+                const taglineP = taglineContainer.querySelector('p') || taglineContainer;
+                taglineP.textContent = heroTagline;
+                taglineContainer.style.visibility = 'visible';
+              }
+            }
+
+            if (aboutHeading) {
+              document.querySelectorAll('.framer-1opk861').forEach(el => {
+                const span = el.querySelector('span.framer-text') || el;
+                span.textContent = aboutHeading;
+                el.style.visibility = 'visible';
+              });
+            }
+
+            if (aboutParagraph) {
+              document.querySelectorAll('.framer-vcv5jl').forEach(el => {
+                const p = el.querySelector('p') || el;
+                p.textContent = aboutParagraph;
+                el.style.visibility = 'visible';
+              });
+            }
+
+            if (servicesHeading) {
+              const servicesSection = document.getElementById('services');
+              if (servicesSection) {
+
+                servicesSection.querySelectorAll('p').forEach(p => {
+                  const text = (p.textContent || '').trim().toLowerCase();
+                  if (text === 'services') {
+                    const parent = p.closest('.framer-srtpqd');
+                    if (parent && parent.parentElement) {
+                      parent.parentElement.removeChild(parent);
+                    } else {
+                      p.style.display = 'none';
+                    }
+                  }
+                });
+
+                const headingContainer = servicesSection.querySelector('[data-framer-name="The Key Benefits of Partnering"]');
+                if (headingContainer) {
+                  const headingSpan = headingContainer.querySelector('span') || headingContainer;
+                  headingSpan.textContent = servicesHeading;
+                  headingContainer.style.opacity = '1';
+                }
+              }
+            }
+
+            if (phoneNumber || whatsappNumber) {
+              document.querySelectorAll('a[href^="tel:"]').forEach(a => {
+                if (phoneNumber) {
+                  a.setAttribute('href', 'tel:' + phoneNumber);
+                  a.textContent = phoneNumber;
+                }
+              });
+              document.querySelectorAll('a[href^="https://wa.me/"], a[href^="https://api.whatsapp.com/"]').forEach(a => {
+                if (whatsappNumber) {
+                  a.setAttribute('href', 'https://api.whatsapp.com/send/?phone=' + whatsappNumber);
+                }
+              });
+            }
+
+            if (locationName && locationLink) {
+
+              document.querySelectorAll('a[href*="google.com/maps"]').forEach(a => {
+                a.setAttribute('href', locationLink);
+                a.textContent = locationName;
+              });
+
+              const patterns = /(Orange\s+Well|NJ\s+USA|613\s+Orange)/i;
+              ['a','span','p','div'].forEach(tag => {
+                document.querySelectorAll(tag).forEach(el => {
+                  const text = (el.textContent || '').trim();
+                  if (patterns.test(text)) {
+                    el.textContent = locationName;
+                    if (el.tagName.toLowerCase() === 'a') {
+                      el.setAttribute('href', locationLink);
+                    }
+                  }
+                });
+              });
+
+              document.querySelectorAll('[data-framer-name="Location"]').forEach(icon => {
+                const row = icon.closest('[data-framer-name="location"]');
+                if (!row) return;
+                const anchor = row.querySelector('a');
+                if (anchor) {
+                  anchor.setAttribute('href', locationLink);
+                  anchor.textContent = locationName;
+                  return;
+                }
+
+                const candidates = row.querySelectorAll('span, p, div');
+                for (const el of candidates) {
+                  const txt = (el.textContent || '').trim();
+                  if (txt) {
+                    const a = document.createElement('a');
+                    a.setAttribute('href', locationLink);
+                    a.setAttribute('target', '_blank');
+                    a.setAttribute('rel', 'noopener');
+                    a.textContent = locationName;
+                    while (el.firstChild) el.removeChild(el.firstChild);
+                    el.appendChild(a);
+                    break;
+                  }
+                }
+              });
+            }
+
+            if (servicesItems.length > 0) {
+              const group1 = document.querySelector('.framer-1kze55b');
+              if (group1) {
+
+                const group2 = document.querySelector('.framer-17s3akn');
+                if (group2 && group2.parentElement) {
+                  group2.parentElement.removeChild(group2);
+                }
+                group1.innerHTML = '';
+
+                const wrapper = document.createElement('div');
+                wrapper.style.display = 'flex';
+                wrapper.style.flexDirection = 'column';
+                wrapper.style.gap = '12px';
+                servicesItems.forEach(itemText => {
+                  const item = document.createElement('div');
+                  item.style.display = 'flex';
+                  item.style.alignItems = 'center';
+                  item.style.gap = '8px';
+
+                  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                  svg.setAttribute('viewBox', '0 0 24 24');
+                  svg.style.width = '24px';
+                  svg.style.height = '24px';
+                  svg.style.flexShrink = '0';
+                  const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                  circle.setAttribute('cx', '12');
+                  circle.setAttribute('cy', '12');
+                  circle.setAttribute('r', '11');
+                  circle.setAttribute('fill', '#005DFB');
+                  svg.appendChild(circle);
+                  const check = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                  check.setAttribute('d', 'M8 12.5l2.5 2.5 5-5');
+                  check.setAttribute('stroke', '#ffffff');
+                  check.setAttribute('stroke-width', '2');
+                  check.setAttribute('fill', 'none');
+                  check.setAttribute('stroke-linecap', 'round');
+                  check.setAttribute('stroke-linejoin', 'round');
+                  svg.appendChild(check);
+                  const span = document.createElement('span');
+                  span.textContent = itemText;
+
+                  span.className = 'framer-text framer-styles-preset-116v73k';
+                  item.appendChild(svg);
+                  item.appendChild(span);
+                  wrapper.appendChild(item);
+                });
+                group1.appendChild(wrapper);
+              }
+            }
+
+            const copyrightText = getText('footer-copyright');
+            if (copyrightText) {
+              document.querySelectorAll('p').forEach(el => {
+                const txt = (el.textContent || '').trim().toLowerCase();
+                if (txt.includes('copyright')) {
+                  el.textContent = copyrightText;
+                }
+              });
+            }
+
+            if (contactEmail) {
+
+              document.querySelectorAll('a[href^="mailto:"]').forEach(a => {
+                a.setAttribute('href', 'mailto:' + contactEmail);
+                a.textContent = contactEmail;
+              });
+
+              const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              document.querySelectorAll('span, p, div').forEach(el => {
+                const text = (el.textContent || '').trim();
+                if (emailRegex.test(text)) {
+                  el.textContent = contactEmail;
+                }
+              });
+
+              document.querySelectorAll('[data-framer-name="email"]').forEach(row => {
+                row.style.display = '';
+              });
+
+              const templateRow = document.querySelector('[data-framer-name="email"]');
+              document.querySelectorAll('[data-framer-name="contact-information"]').forEach(container => {
+
+                const existing = container.querySelector('[data-framer-name="email"], [data-framer-name="email-custom"]');
+                if (!existing) {
+                  let clone;
+                  if (templateRow) {
+                    clone = templateRow.cloneNode(true);
+                    clone.setAttribute('data-framer-name', 'email-custom');
+                    clone.querySelectorAll('a[href^="mailto:"]').forEach(a => {
+                      a.setAttribute('href', 'mailto:' + contactEmail);
+                      a.textContent = contactEmail;
+                      a.style.color = 'white';
+                      a.style.textDecoration = 'none';
+                    });
+                  } else {
+
+                    clone = document.createElement('div');
+                    clone.className = 'framer-eg4xpl';
+                    clone.setAttribute('data-framer-name', 'email-custom');
+                    clone.style.display = 'flex';
+                    clone.style.alignItems = 'center';
+                    clone.style.gap = '8px';
+
+                    const spanIcon = document.createElement('span');
+                    spanIcon.textContent = '✉';
+                    spanIcon.style.color = 'white';
+                    clone.appendChild(spanIcon);
+                    const p = document.createElement('p');
+                    p.style.margin = '0';
+                    const a = document.createElement('a');
+                    a.setAttribute('href', 'mailto:' + contactEmail);
+                    a.textContent = contactEmail;
+                    a.style.color = 'white';
+                    a.style.textDecoration = 'none';
+                    p.appendChild(a);
+                    clone.appendChild(p);
+                  }
+                  clone.style.display = 'flex';
+                  clone.style.visibility = 'visible';
+                  clone.style.opacity = '1';
+                  container.appendChild(clone);
+                } else {
+
+                  existing.querySelectorAll('a[href^="mailto:"]').forEach(a => {
+                    a.setAttribute('href', 'mailto:' + contactEmail);
+                    a.textContent = contactEmail;
+                    a.style.color = 'white';
+                    a.style.textDecoration = 'none';
+                  });
+                  existing.style.display = 'flex';
+                  existing.style.visibility = 'visible';
+                  existing.style.opacity = '1';
+                }
+              });
+
+              document.querySelectorAll('[data-framer-name="contact-information"]').forEach(container => {
+
+                container.querySelectorAll('[data-framer-name="email"], [data-framer-name="email-custom"]').forEach(row => {
+                  row.style.display = 'none';
+                });
+
+                container.querySelectorAll('.custom-email-row').forEach(row => row.remove());
+
+                const customRow = document.createElement('div');
+                customRow.className = 'custom-email-row';
+                customRow.style.display = 'flex';
+                customRow.style.alignItems = 'center';
+                customRow.style.gap = '12px';
+                customRow.style.marginTop = '8px';
+
+                const box = document.createElement('div');
+                box.style.width = '32px';
+                box.style.height = '32px';
+                box.style.display = 'flex';
+                box.style.alignItems = 'center';
+                box.style.justifyContent = 'center';
+                box.style.border = '1px solid rgba(255,255,255,0.6)';
+                box.style.borderRadius = '6px';
+
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('viewBox', '0 0 24 24');
+                svg.setAttribute('width', '20');
+                svg.setAttribute('height', '20');
+                svg.style.fill = 'white';
+                svg.style.color = 'white';
+                const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+                use.setAttribute('href', '#svg217510220_1034');
+                svg.appendChild(use);
+                box.appendChild(svg);
+
+                const link = document.createElement('a');
+                link.setAttribute('href', 'mailto:' + contactEmail);
+                link.textContent = contactEmail;
+                link.style.color = 'white';
+                link.style.textDecoration = 'none';
+                link.style.fontSize = '16px';
+
+                customRow.appendChild(box);
+                customRow.appendChild(link);
+                container.appendChild(customRow);
+              });
+            }
+
+            if (footerHeadline) {
+              let styleEl = document.getElementById('custom-footer-headline');
+              if (!styleEl) {
+                styleEl = document.createElement('style');
+                styleEl.id = 'custom-footer-headline';
+                document.head.appendChild(styleEl);
+              }
+
+              const safeHeadline = footerHeadline.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/'/g, "\\'");
+              styleEl.textContent = '[data-framer-name="Power Your Business"]::after { content: "' + safeHeadline + '"; font-size: 64px; font-weight: 700; display:block; color: rgb(255, 255, 255); line-height: 1.2; }';
+            }
+
+            if (footerSlogan) {
+              let styleEl2 = document.getElementById('custom-footer-slogan');
+              if (!styleEl2) {
+                styleEl2 = document.createElement('style');
+                styleEl2.id = 'custom-footer-slogan';
+                document.head.appendChild(styleEl2);
+              }
+              const safeSlogan = footerSlogan.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/'/g, "\\'");
+              styleEl2.textContent = '[data-framer-name="logo & slogan"]::after { content: "' + safeSlogan + '"; font-size: 20px; font-weight: 400; display:block; color: rgb(255, 255, 255); margin-top: 4px; }';
+            }
+
+            if (ctaHeadingVal) {
+              document.querySelectorAll('[data-framer-name="Call to Action Heading"] h3').forEach(h => {
+                h.textContent = ctaHeadingVal;
+              });
+            }
+
+            if (ctaSubheadingVal) {
+              const defaultSub = 'Secure your online identity with our expert verification & recovery services.';
+              document.querySelectorAll('p').forEach(el => {
+                const text = (el.textContent || '').trim();
+                if (text === defaultSub) {
+                  el.textContent = ctaSubheadingVal;
+                }
+              });
+            }
+
+            if (ctaNoteVal) {
+              const defaultNote = 'For consultation and inquiry';
+              document.querySelectorAll('p, span, div').forEach(el => {
+                const text = (el.textContent || '').trim();
+                if (text === defaultNote) {
+                  el.textContent = ctaNoteVal;
+                }
+              });
+            }
+
+            if (attempts > maxAttempts) {
+              clearInterval(intervalId);
+            }
+          }, pollInterval);
+        });
+      })();
+    </script>
+
+  </body>
 </html>
