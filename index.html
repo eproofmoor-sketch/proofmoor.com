@@ -4,10 +4,15 @@
     <head>
         <meta charset="utf-8">
         <title>Proofmoor - Empowering your brand’s</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <!-- Use relative paths for favicon and manifest files so they work on GitHub Pages. 
+             When deploying a project site on GitHub Pages the root URL corresponds to 
+             `/<repository-name>/`, so absolute paths like `/favicon-32x32.png` will break. 
+             These assets live in the `favicon_io` folder alongside index.html, so prefix 
+             their names with `./favicon_io/` to ensure the browser finds them correctly. -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="./favicon_io/site.webmanifest">
         <script>
           (function() {
             const desiredTitle = 'Proofmoor - Empowering your brand’s';
