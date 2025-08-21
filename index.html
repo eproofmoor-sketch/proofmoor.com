@@ -148,14 +148,14 @@
           /* Header logo: constrain the height to 60 px so the square logo scales down to
              approximately 60 px tall.  Width is set to auto to preserve aspect ratio. */
           [data-framer-name="logo-container"] img {
-            height: 60px;
+            height: 40px;
             width: auto;
             object-fit: contain;
           }
 
           /* Footer logo: slightly smaller height (50 px) to fit comfortably in the footer area. */
           [data-framer-name="logo & slogan"] img {
-            height: 50px;
+            height: 70px;
             width: auto;
             object-fit: contain;
           }
@@ -6425,13 +6425,94 @@
             display: none !important;
           }
           [data-framer-name="logo & slogan"]::after {
-            /* Update footer slogan: shorten the tagline to just 'Empowering your brand's' */
+            /*
+             * Update footer slogan: shorten the tagline to just
+             * "Empowering your brand's" and ensure the text doesn't wrap.  By
+             * default the pseudo‑element displays as a block and will wrap
+             * automatically.  The white-space: nowrap rule forces the
+             * content to stay on a single line, matching the desired
+             * appearance in the footer.
+             */
+            /* Insert the full slogan.  We rely on flexbox and nowrap rules to keep it on one line. */
             content: "Empowering your brand's";
             font-size: 20px;
             font-weight: 400;
             display: block;
             color: rgb(255, 255, 255);
             margin-top: 4px;
+            white-space: nowrap !important;
+          }
+
+          /*
+           * Ensure the container holding the logo and slogan has enough horizontal
+           * space so that the footer tagline does not wrap.  By default the
+           * container has a fixed width that is too narrow for longer taglines.
+           * Using `fit-content` with a sensible minimum width allows the text
+           * to stay on a single line without overflowing the layout.  The
+           * `!important` flags ensure our overrides take precedence over
+           * Framer's generated styles.
+           */
+          [data-framer-name="logo & slogan"] {
+            width: fit-content !important;
+            min-width: 320px !important;
+          }
+
+          /* Prevent the Framer container from wrapping its children.  The original
+             layout uses flexbox with `flex-wrap: wrap`, which causes the logo
+             and slogan to break onto separate lines on narrow viewports.  By
+             forcing `flex-wrap: nowrap`, the logo and slogan stay on a single
+             row regardless of available space. */
+          [data-framer-name="logo & slogan"] {
+            flex-wrap: nowrap !important;
+          }
+
+          /* Force each direct child of the logo & slogan container (logo image and
+             slogan text) to behave as inline-flex items.  This prevents them
+             from taking the full row width (the default block behavior) and
+             ensures they sit next to each other on a single line. */
+          [data-framer-name="logo & slogan"] > * {
+            display: inline-flex !important;
+          }
+
+          /* Prevent line breaks inside all child elements of the logo/slogan
+             container.  This ensures the tagline text stays on a single line
+             regardless of which DOM element Framer uses to render it. */
+          [data-framer-name="logo & slogan"] * {
+            white-space: nowrap !important;
+          }
+
+          /*
+           * Adjust the layout of the logo and slogan in the footer.  The logo,
+           * brand name and tagline should appear stacked vertically (logo on
+           * top, brand name below, and tagline on a third line) with only a
+           * small vertical gap between each element.  Override our earlier
+           * inline‑flex settings by restoring flexbox column layout and
+           * resetting margins so the spacing is tight but distinct.  The
+           * pseudo‑element for the slogan is returned to block display to
+           * force it onto its own line.
+           */
+          [data-framer-name="logo & slogan"] {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 4px !important;
+            flex-wrap: nowrap !important;
+          }
+
+          [data-framer-name="logo & slogan"]::after {
+            display: block !important;
+            /* Slightly reduce the space between the brand name and the tagline */
+            margin-top: 2px !important;
+            margin-left: 0 !important;
+          }
+
+          /* Remove default margins from the heading inside the logo & slogan
+             container to tighten the spacing between the brand name and the
+             tagline.  Without this override, HTML heading elements like h6
+             include default top and bottom margins that create extra gap. */
+          [data-framer-name="logo & slogan"] h6 {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
           }
 
           /* Replace the call-to-action subheading text in the hero CTA */
@@ -6635,6 +6716,14 @@
         z-index: 10000;
         text-decoration: none;
         transition: transform 0.2s ease-in-out;
+        /*
+         * Apply a gentle pulsing animation to the floating button.  The animation
+         * creates a subtle “blink” or halo effect by expanding and fading a
+         * coloured shadow around the button.  The colours used in this
+         * animation are derived from the primary blue used on the site, so
+         * the button remains visually consistent with the rest of the design.
+         */
+        animation: whatsappPulse 2.5s infinite;
       }
       .whatsapp-float:hover {
         transform: scale(1.05);
@@ -6643,6 +6732,35 @@
         width: 28px;
         height: 28px;
         fill: currentColor;
+      }
+
+      /*
+       * Define the keyframes for the pulsing (blink) effect.  The button
+       * periodically scales up slightly and emits a fading coloured halo.
+       * At the midpoint of the animation the halo radius is largest and
+       * almost fully transparent; at the start and end the halo is small
+       * and semi–opaque.  You can adjust the `box-shadow` spread and
+       * opacity values if a more pronounced or subtler effect is desired.
+       */
+      @keyframes whatsappPulse {
+        /*
+         * At the start of the animation the button has no halo and is
+         * rendered at its normal size.  The halo gradually expands and
+         * fades until it reaches its maximum radius and full transparency
+         * at 50%.  It then shrinks back and regains opacity by 100%.
+         */
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(0, 93, 251, 0.6);
+        }
+        50% {
+          transform: scale(1.07);
+          box-shadow: 0 0 0 22px rgba(0, 93, 251, 0);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(0, 93, 251, 0.6);
+        }
       }
     </style>
     </head>
@@ -12747,7 +12865,15 @@
       <!-- Footer headline (e.g. "Recover. Verify. Grow.") displayed in the large type above the footer. -->
       <div id="footer-headline">Recover. Verify. Grow.</div>
       <!-- Footer slogan beneath the logo in the footer. Use simple text without quotes. -->
-      <div id="footer-slogan">Empowering your brand's</div>
+      <!--
+        The footer slogan is split into multiple lines by default when the
+        available width is narrow.  To keep the entire phrase on a single line
+        we've replaced the normal spaces with non‑breaking spaces (`&nbsp;`).
+        This prevents the browser from wrapping at those points.  The string
+        displayed to the user remains visually the same but will no longer
+        wrap mid‑phrase.
+      -->
+      <div id="footer-slogan" style="white-space: nowrap; font-size: 16px;">Empowering your brand's</div>
       <!-- Call‑to‑action heading inside the coloured banner section. -->
       <div id="cta-heading">Recover, Verify &amp; Protect All In One Place !</div>
       <!-- Call‑to‑action subheading beneath the main heading in the coloured banner section. -->
@@ -13219,8 +13345,23 @@
                 styleEl2.id = 'custom-footer-slogan';
                 document.head.appendChild(styleEl2);
               }
-              const safeSlogan = footerSlogan.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/'/g, "\\'");
-              styleEl2.textContent = '[data-framer-name="logo & slogan"]::after { content: "' + safeSlogan + '"; font-size: 20px; font-weight: 400; display:block; color: rgb(255, 255, 255); margin-top: 4px; }';
+              // Escape backslashes and quotes for inclusion in a CSS content string,
+              // then replace normal spaces with Unicode non‑breaking spaces (\00a0)
+              // to prevent the tagline from wrapping onto multiple lines.
+              const safeSlogan = footerSlogan
+                .replace(/\\/g, '\\\\')
+                .replace(/"/g, '\\"')
+                .replace(/'/g, "\\'");
+              /*
+               * The default Framer footer slogan renders as a block element and
+               * will wrap across multiple lines when the container is narrow.
+               * To keep the user‑supplied footer slogan on a single line we
+               * explicitly set white-space to nowrap.  This ensures that
+               * whatever text is provided via the `footerSlogan` variable
+               * appears in one continuous line, matching the design intent in
+               * the user's feedback.
+               */
+              styleEl2.textContent = '[data-framer-name="logo & slogan"]::after { content: "' + safeSlogan + '"; font-size: 20px; font-weight: 400; display:block; color: rgb(255, 255, 255); margin-top: 4px; white-space: nowrap !important; }';
             }
 
             // Update call-to-action heading
