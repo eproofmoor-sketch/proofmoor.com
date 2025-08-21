@@ -4,36 +4,28 @@
     <head>
         <meta charset="utf-8">
         <title>Proofmoor - Empowering your brand’s</title>
-        <!-- Updated favicon and manifest references -->
-        <!-- Apple Touch icon for iOS home screen (180×180).  When serving locally via file:/// paths, use relative URLs rather than absolute root URLs so the icons resolve properly. -->
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
-        <!-- Standard favicon sizes -->
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-
-        <!-- Additional icons for Android/Chrome (used by some browsers when pinning pages) -->
-        <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-        <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
-
-        <!-- Multi‑size ICO for older browsers -->
-        <link rel="shortcut icon" href="favicon.ico">
-
-        <!-- Progressive Web App manifest -->
-        <link rel="manifest" href="site.webmanifest">
-        <meta name="viewport" content="width=device-width">
-        <!-- Page description for search engines -->
-        <meta name="description" content="Proofmoor - Empowering your brand’s">
-
-        <!-- Open Graph tags for better link previews (e.g. Slack, Facebook) -->
-        <meta property="og:title" content="Proofmoor - Empowering your brand’s">
-        <meta property="og:description" content="Proofmoor - Empowering your brand’s">
-        <meta property="og:type" content="website">
-
-        <!-- Twitter card tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Proofmoor - Empowering your brand’s">
-        <meta name="twitter:description" content="Proofmoor - Empowering your brand’s">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <script>
+          (function() {
+            const desiredTitle = 'Proofmoor - Empowering your brand’s';
+            function enforceTitle() {
+              if (document.title !== desiredTitle) {
+                document.title = desiredTitle;
+              }
+              // re-run on the next animation frame to catch late changes
+              requestAnimationFrame(enforceTitle);
+            }
+            // Wait until the DOM is fully parsed before starting the loop
+            if (document.readyState === 'complete' || document.readyState === 'interactive') {
+              enforceTitle();
+            } else {
+              document.addEventListener('DOMContentLoaded', enforceTitle);
+            }
+          })();
+        </script>
         <style>
           
           #services .framer-srtpqd,
