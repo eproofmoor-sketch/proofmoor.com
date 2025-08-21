@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- ✨ Built with Framer • https://www.framer.com/ -->
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -22,7 +22,7 @@
         <link rel="canonical" href="https://proofmoor.com/">
         <meta property="og:url" content="https://proofmoor.com/">
 
-        <!-- Custom styles to hide the Services label and heading until updated -->
+        
         <style>
           /* Hide the Services label and heading in the services section to prevent flashes of the old content */
           #services .framer-srtpqd,
@@ -37,7 +37,7 @@
         display: none !important;
       }
         </style>
-        <!-- Custom style overrides -->
+        
         <style>
           /* Custom hero contact button styling */
           .hero-contact-btn {
@@ -93,7 +93,7 @@
             filter: brightness(1.1);
           }
         </style>
-        <!-- Custom override styles for new blue theme -->
+        
         <style>
           /* Apply blue gradient to the hero CTA button regardless of its link */
           [data-framer-name="Button"] a[data-reset="button"] {
@@ -139,11 +139,7 @@
           }
         </style>
 
-        <!-- Custom logo size overrides (ChatGPT modification)
-             Adjust the custom Proofmoor logo dimensions in the header and footer.  The values here
-             correspond to the approximate rendered sizes we discussed: ~200×60 px for the header
-             (scaled down from the 500 px square source) and ~160×50 px for the footer.  We set
-             explicit heights so that the images maintain their aspect ratio via auto width. -->
+        
         <style id="custom-logo-sizes">
           /* Header logo: constrain the height to 60 px so the square logo scales down to
              approximately 60 px tall.  Width is set to auto to preserve aspect ratio. */
@@ -6341,8 +6337,8 @@
                 transition: color .2s cubic-bezier(.44,0,.56,1) 0s
             }
         </style>
-        <!-- Start of headEnd -->
-        <!-- End of headEnd -->
+        
+        
         <style>
             /* User customization: hide the hero label "Bring your business to the best scale" */
             .framer-k7rqpk {
@@ -6365,7 +6361,7 @@
                 visibility: hidden;
             }
         </style>
-        <!-- Custom styles for replacing taglines -->
+        
         <style>
           /* Replace the large footer heading */
           [data-framer-name="Power Your Business"] > * {
@@ -6403,23 +6399,24 @@
             font-size: 64px;
             font-weight: 700;
             display: block;
-            color: rgb(255, 255, 255);
+            color: transparent;
+          
+            /* Gradient fill */
+            background: linear-gradient(
+              to bottom,
+              rgba(255,255,255,1) 0%,      /* একেবারে উপরে সাদা */
+              rgba(255,255,255,1) 95%,     /* সাদা dominance প্রায় পুরোটা */
+              rgba(180,180,180,1) 97%,     /* হালকা ধূসর এর স্বল্প অংশ */
+              rgba(40,40,40,1) 100%        /* নিচে কালো */
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          
             line-height: 1.2;
-            /* Add a soft black shadow behind the footer headline similar to the
-               “Explore Our Services” section heading.  This drop shadow helps
-               the white text stand out against the dark background by subtly
-               glowing around it. */
-            /* Apply a stronger halo behind the headline.  A zero-offset
-               text-shadow with a large blur radius creates a subtle yet
-               noticeable black glow around each word, echoing the shadow
-               effect used in the services section heading. */
             text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-            /* Use drop-shadow filter to generate a soft halo behind the entire
-               pseudo-element.  This reinforces the black shadow effect even on
-               very dark backgrounds. */
             filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.9));
           }
-
           /* Replace the footer slogan */
           [data-framer-name="logo & slogan"] > *:not(:first-child) {
             display: none !important;
@@ -6529,7 +6526,7 @@
           }
         </style>
 
-        <!-- Script to update CTA button text and link and ensure click works -->
+        
         <script>
           document.addEventListener('DOMContentLoaded', function() {
             const WA_LINK = 'https://api.whatsapp.com/send/?phone=8801334077132';
@@ -6592,7 +6589,7 @@
             }, 500);
           });
         </script>
-        <!-- Ensure service card headings are visible by default. Icons will be revealed by our script. -->
+        
         <style>
           /* Do not hide the card headings – they should be displayed so the titles are visible. */
           [data-framer-name="card"] h5 {
@@ -6603,7 +6600,7 @@
             visibility: hidden;
           }
         </style>
-        <!-- Script to update service card titles and provide placeholders for user-provided icons -->
+        
         <script>
           document.addEventListener('DOMContentLoaded', function() {
             // Define the titles for each service card. You can reorder or replace these
@@ -6696,7 +6693,7 @@
             }, 500);
           });
         </script>
-    <!-- Custom style for floating WhatsApp chat button -->
+    
     <style>
       /* Floating WhatsApp button placed at the bottom right of the viewport.
          It uses a blue background to match the site's colour palette. */
@@ -6766,10 +6763,10 @@
     </head>
     <body>
         <script async src="https://events.framer.com/script?v=2" data-fid="d94f5c488f85a00d3608fb4a111a0b6529c1b8261809a659335e00f6c2c6d7ec" data-no-nt></script>
-        <!-- Start of bodyStart -->
-        <!-- End of bodyStart -->
+        
+        
         <div id="main" data-framer-hydrate-v2="{&quot;routeId&quot;:&quot;augiA20Il&quot;,&quot;localeId&quot;:&quot;default&quot;,&quot;breakpoints&quot;:[{&quot;hash&quot;:&quot;72rtr7&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 1200px)&quot;},{&quot;hash&quot;:&quot;1t8geif&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 810px) and (max-width: 1199px)&quot;},{&quot;hash&quot;:&quot;x89b52&quot;,&quot;mediaQuery&quot;:&quot;(max-width: 809px)&quot;},{&quot;hash&quot;:&quot;144fed4&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 1200px)&quot;},{&quot;hash&quot;:&quot;vx5kwv&quot;,&quot;mediaQuery&quot;:&quot;(min-width: 810px) and (max-width: 1199px)&quot;},{&quot;hash&quot;:&quot;1hfo6iu&quot;,&quot;mediaQuery&quot;:&quot;(max-width: 809px)&quot;}]}" data-framer-ssr-released-at="2025-06-12T12:32:04.789Z" data-framer-page-optimized-at="2025-06-17T08:47:44.331Z" data-framer-generated-page>
-            <!--$-->
+            
             <style data-framer-html-style>
                 :root body {
                     background: var(--token-c23e4bcb-555f-49bf-b48c-960f1c475dc2, rgb(2, 3, 15));
@@ -6815,7 +6812,7 @@
                                 </div>
                             </div>
                             <div class="framer-1hq95x5-container">
-                                <!--$-->
+                                
                                 <section style="display:flex;width:100%;height:100%;max-width:100%;max-height:100%;place-items:center;margin:0;padding:0px;list-style-type:none;text-indent:none;opacity:0;-webkit-mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12.5%, rgba(0, 0, 0, 1) 87.5%, rgba(0, 0, 0, 0) 100%);mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12.5%, rgba(0, 0, 0, 1) 87.5%, rgba(0, 0, 0, 0) 100%);overflow:hidden">
                                     <ul style="display:flex;width:100%;height:100%;max-width:100%;max-height:100%;place-items:center;margin:0;padding:0;list-style-type:none;text-indent:none;gap:40px;position:relative;flex-direction:row;will-change:auto;transform:translateX(-0px)">
                                         <li>
@@ -6882,7 +6879,7 @@
                                         </li>
                                     </ul>
                                 </section>
-                                <!--/$-->
+                                
                             </div>
                             <div data-framer-component-type="SVG" data-framer-name="Vector" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-qw7b4q" aria-hidden="true">
                                 <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
@@ -7042,7 +7039,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Hide the original feature list container and add our own vertically stacked list -->
+                            
                             <style>
                                 /* Hide the original feature list groups to prevent duplicate bullets */
                                 .framer-gtylit,
@@ -7056,7 +7053,7 @@
                                 }
                                 /* No additional styles needed; custom list is styled inline */
                             </style>
-                            <!-- The custom features list will be dynamically injected here via JavaScript -->
+                            
                         </div>
                         <div class="framer-eid638" data-framer-name="img-wrapper" style="will-change:transform;opacity:0;transform:translateY(50px)">
                             <div data-framer-component-type="SVG" data-framer-name="img" style="image-rendering:pixelated;flex-shrink:0;fill:var(--token-c23e4bcb-555f-49bf-b48c-960f1c475dc2, rgb(0, 0, 0)) /* {&quot;name&quot;:&quot;Base-200&quot;} */;color:var(--token-c23e4bcb-555f-49bf-b48c-960f1c475dc2, rgb(0, 0, 0)) /* {&quot;name&quot;:&quot;Base-200&quot;} */" class="framer-fphkcs" aria-hidden="true">
@@ -7260,7 +7257,7 @@
                                             </div>
                                         </div>
                                         <div class="framer-1ijovnb-container" data-framer-name="profile-wrapper" name="profile-wrapper">
-                                            <!--$-->
+                                            
                                             <section style="display:flex;width:100%;height:100%;max-width:100%;max-height:100%;place-items:center;margin:0;padding:10px;list-style-type:none;text-indent:none;opacity:0;-webkit-mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12.5%, rgba(0, 0, 0, 1) 87.5%, rgba(0, 0, 0, 0) 100%);mask-image:linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 12.5%, rgba(0, 0, 0, 1) 87.5%, rgba(0, 0, 0, 0) 100%);overflow:hidden">
                                                 <ul style="display:flex;width:100%;height:100%;max-width:100%;max-height:100%;place-items:center;margin:0;padding:0;list-style-type:none;text-indent:none;gap:10px;position:relative;flex-direction:row;will-change:auto;transform:translateX(-0px)">
                                                     <li>
@@ -7289,7 +7286,7 @@
                                                     </li>
                                                 </ul>
                                             </section>
-                                            <!--/$-->
+                                            
                                         </div>
                                     </div>
                                     <div class="framer-26z8yx" data-border="true" data-framer-name="card-3" style="will-change:transform;opacity:0;transform:translateY(50px)">
@@ -7390,7 +7387,7 @@
                             </div>
                         </div>
                     </section>
-                    <!-- The brand collaboration logo slider section has been removed -->
+                    
                     <section class="framer-p740t7" data-framer-name="services-section" id="services">
                         <div class="framer-crcqnb" data-framer-name="text-heading">
                             <div class="ssr-variant hidden-x89b52 hidden-1t8geif">
@@ -8157,17 +8154,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--$-->
+                                        
                                         <div class="framer-h4ajr7-container">
-                                            <!--$-->
+                                            
                                             <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="./#contact" tabindex="0">
                                                 <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                     <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Get started</p>
                                                 </div>
                                             </a>
-                                            <!--/$-->
+                                            
                                         </div>
-                                        <!--/$-->
+                                        
                                         <div data-framer-component-type="SVG" data-framer-name="spacer" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-p5rzul" aria-hidden="true">
                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
                                                 <svg style="width:100%;height:100%;" viewBox="0 0 286 4">
@@ -8296,17 +8293,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--$-->
+                                        
                                         <div class="framer-h4ajr7-container">
-                                            <!--$-->
+                                            
                                             <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="./#contact" tabindex="0">
                                                 <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                     <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Get started</p>
                                                 </div>
                                             </a>
-                                            <!--/$-->
+                                            
                                         </div>
-                                        <!--/$-->
+                                        
                                         <div data-framer-component-type="SVG" data-framer-name="spacer" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-p5rzul" aria-hidden="true">
                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
                                                 <svg style="width:100%;height:100%;" viewBox="0 0 286 4">
@@ -8435,17 +8432,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--$-->
+                                        
                                         <div class="framer-h4ajr7-container">
-                                            <!--$-->
+                                            
                                             <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="./#contact" tabindex="0">
                                                 <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                     <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Get started</p>
                                                 </div>
                                             </a>
-                                            <!--/$-->
+                                            
                                         </div>
-                                        <!--/$-->
+                                        
                                         <div data-framer-component-type="SVG" data-framer-name="spacer" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-p5rzul" aria-hidden="true">
                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
                                                 <svg style="width:100%;height:100%;" viewBox="0 0 286 4">
@@ -8574,17 +8571,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--$-->
+                                        
                                         <div class="framer-h4ajr7-container">
-                                            <!--$-->
+                                            
                                             <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="./#contact" tabindex="0">
                                                 <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                     <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Get started</p>
                                                 </div>
                                             </a>
-                                            <!--/$-->
+                                            
                                         </div>
-                                        <!--/$-->
+                                        
                                         <div data-framer-component-type="SVG" data-framer-name="spacer" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-p5rzul" aria-hidden="true">
                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
                                                 <svg style="width:100%;height:100%;" viewBox="0 0 286 4">
@@ -8713,17 +8710,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--$-->
+                                        
                                         <div class="framer-h4ajr7-container">
-                                            <!--$-->
+                                            
                                             <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="./#contact" tabindex="0">
                                                 <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                     <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Get started</p>
                                                 </div>
                                             </a>
-                                            <!--/$-->
+                                            
                                         </div>
-                                        <!--/$-->
+                                        
                                         <div data-framer-component-type="SVG" data-framer-name="spacer" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-p5rzul" aria-hidden="true">
                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
                                                 <svg style="width:100%;height:100%;" viewBox="0 0 286 4">
@@ -8852,17 +8849,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--$-->
+                                        
                                         <div class="framer-h4ajr7-container">
-                                            <!--$-->
+                                            
                                             <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="./#contact" tabindex="0">
                                                 <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                     <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Get started</p>
                                                 </div>
                                             </a>
-                                            <!--/$-->
+                                            
                                         </div>
-                                        <!--/$-->
+                                        
                                         <div data-framer-component-type="SVG" data-framer-name="spacer" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-p5rzul" aria-hidden="true">
                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
                                                 <svg style="width:100%;height:100%;" viewBox="0 0 286 4">
@@ -8991,17 +8988,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--$-->
+                                        
                                         <div class="framer-h4ajr7-container">
-                                            <!--$-->
+                                            
                                             <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="./#contact" tabindex="0">
                                                 <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                     <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Get started</p>
                                                 </div>
                                             </a>
-                                            <!--/$-->
+                                            
                                         </div>
-                                        <!--/$-->
+                                        
                                         <div data-framer-component-type="SVG" data-framer-name="spacer" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-p5rzul" aria-hidden="true">
                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
                                                 <svg style="width:100%;height:100%;" viewBox="0 0 286 4">
@@ -9130,17 +9127,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--$-->
+                                        
                                         <div class="framer-h4ajr7-container">
-                                            <!--$-->
+                                            
                                             <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="./#contact" tabindex="0">
                                                 <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                     <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Get started</p>
                                                 </div>
                                             </a>
-                                            <!--/$-->
+                                            
                                         </div>
-                                        <!--/$-->
+                                        
                                         <div data-framer-component-type="SVG" data-framer-name="spacer" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-p5rzul" aria-hidden="true">
                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
                                                 <svg style="width:100%;height:100%;" viewBox="0 0 286 4">
@@ -9269,17 +9266,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--$-->
+                                        
                                         <div class="framer-h4ajr7-container">
-                                            <!--$-->
+                                            
                                             <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="./#contact" tabindex="0">
                                                 <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                     <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Get started</p>
                                                 </div>
                                             </a>
-                                            <!--/$-->
+                                            
                                         </div>
-                                        <!--/$-->
+                                        
                                         <div data-framer-component-type="SVG" data-framer-name="spacer" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-p5rzul" aria-hidden="true">
                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
                                                 <svg style="width:100%;height:100%;" viewBox="0 0 286 4">
@@ -9390,7 +9387,7 @@
                     <div class="ssr-variant hidden-1hfo6iu hidden-vx5kwv">
                         <div class="framer-lyGO9 framer-wnMJQ framer-u5sTD framer-QGhjo framer-1ogg279 framer-v-1ogg279" data-framer-name="default" data-highlight="true" style="--ijgpgk:20px 64px 0px 64px;width:100%" tabindex="0">
                             <div class="framer-2hqkzl" data-framer-name="Navbar Items Container" style="backdrop-filter:blur(20px);background-color:rgba(255, 255, 255, 0.1);border-bottom-left-radius:20px;border-bottom-right-radius:20px;border-top-left-radius:20px;border-top-right-radius:20px;-webkit-backdrop-filter:blur(20px)">
-                                <!--$-->
+                                
                                 <a class="framer-18n0osc framer-h3kekq" data-framer-name="logo-container" href="./" data-framer-page-link-current="true">
                                     <div data-framer-component-type="SVG" data-framer-name="logo" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-enq5wx" aria-hidden="true">
                                         <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
@@ -9403,56 +9400,56 @@
                                         <h6 class="framer-text framer-styles-preset-116v73k" data-styles-preset="gOjRqHu4S">Proofmoor</h6>
                                     </div>
                                 </a>
-                                <!--/$-->
+                                
                                 <nav class="framer-1urwjef" data-framer-name="Links Container">
                                     <div class="framer-17j152y" data-framer-name="Link" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy">
-                                            <!--$-->
+                                            
                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#about-us">About us</a>
-                                            <!--/$-->
+                                            
                                         </p>
                                     </div>
                                     <div class="framer-m95au9" data-framer-name="Link" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy">
-                                            <!--$-->
+                                            
                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#services">Services</a>
-                                            <!--/$-->
+                                            
                                         </p>
                                     </div>
                                     <div class="framer-xyc6yh" data-framer-name="Link" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy">
-                                            <!--$-->
+                                            
                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#why-us">Why Us</a>
-                                            <!--/$-->
+                                            
                                         </p>
                                     </div>
                                     <div class="framer-nqsb1a" data-framer-name="Link" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy">
-                                            <!--$-->
+                                            
                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#faq">FAQ</a>
-                                            <!--/$-->
+                                            
                                         </p>
                                     </div>
                                 </nav>
-                                <!--$-->
+                                
                                 <div class="framer-jwbgh6-container">
-                                    <!--$-->
+                                    
                                     <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://api.whatsapp.com/send/?phone=8801334077132" target="_blank" tabindex="0">
-                                        <!-- Updated CTA button styling: blue gradient and white text -->
+                                        
                                         <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(255, 255, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                             <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:rgb(255, 255, 255)">Contact Now</p>
                                         </div>
                                     </a>
-                                    <!--/$-->
+                                    
                                 </div>
-                                <!--/$-->
+                                
                             </div>
                         </div>
                     </div>
                     <div class="ssr-variant hidden-144fed4 hidden-vx5kwv">
                         <div class="framer-lyGO9 framer-wnMJQ framer-u5sTD framer-QGhjo framer-1ogg279 framer-v-k22ssw" data-framer-name="phone" style="--ijgpgk:0px 20px 0px 20px;width:100%">
                             <div class="framer-2hqkzl" data-framer-name="Navbar Items Container" style="backdrop-filter:none;background-color:rgba(0, 0, 0, 0);border-bottom-left-radius:20px;border-bottom-right-radius:20px;border-top-left-radius:20px;border-top-right-radius:20px;-webkit-backdrop-filter:none">
-                                <!--$-->
+                                
                                 <a class="framer-18n0osc framer-h3kekq" data-framer-name="logo-container" href="./" data-framer-page-link-current="true">
                                     <div data-framer-component-type="SVG" data-framer-name="logo" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-enq5wx" aria-hidden="true">
                                         <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
@@ -9465,7 +9462,7 @@
                                         <h6 class="framer-text framer-styles-preset-116v73k" data-styles-preset="gOjRqHu4S">Proofmoor</h6>
                                     </div>
                                 </a>
-                                <!--/$-->
+                                
                                 <div class="framer-abfy8x-container">
                                     <div class="framer-zylm4 framer-11m3k0f framer-v-16gm0su" data-framer-name="Open (Small)" style="background-color:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));border-bottom-left-radius:50%;border-bottom-right-radius:50%;border-top-left-radius:50%;border-top-right-radius:50%" tabindex="0">
                                         <div class="framer-1u8iu8v" data-framer-name="Bg" style="background-color:rgba(255, 255, 255, 0);border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px;transform:translateY(-50%)"></div>
@@ -9481,7 +9478,7 @@
                     <div class="ssr-variant hidden-1hfo6iu hidden-144fed4">
                         <div class="framer-lyGO9 framer-wnMJQ framer-u5sTD framer-QGhjo framer-1ogg279 framer-v-1ogg279" data-framer-name="default" data-highlight="true" style="--ijgpgk:32px 40px 0px 40px;width:100%" tabindex="0">
                             <div class="framer-2hqkzl" data-framer-name="Navbar Items Container" style="backdrop-filter:blur(20px);background-color:rgba(255, 255, 255, 0.1);border-bottom-left-radius:20px;border-bottom-right-radius:20px;border-top-left-radius:20px;border-top-right-radius:20px;-webkit-backdrop-filter:blur(20px)">
-                                <!--$-->
+                                
                                 <a class="framer-18n0osc framer-h3kekq" data-framer-name="logo-container" href="./" data-framer-page-link-current="true">
                                     <div data-framer-component-type="SVG" data-framer-name="logo" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-enq5wx" aria-hidden="true">
                                         <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
@@ -9494,48 +9491,48 @@
                                         <h6 class="framer-text framer-styles-preset-116v73k" data-styles-preset="gOjRqHu4S">Proofmoor</h6>
                                     </div>
                                 </a>
-                                <!--/$-->
+                                
                                 <nav class="framer-1urwjef" data-framer-name="Links Container">
                                     <div class="framer-17j152y" data-framer-name="Link" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy">
-                                            <!--$-->
+                                            
                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#about-us">About us</a>
-                                            <!--/$-->
+                                            
                                         </p>
                                     </div>
                                     <div class="framer-m95au9" data-framer-name="Link" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy">
-                                            <!--$-->
+                                            
                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#services">Services</a>
-                                            <!--/$-->
+                                            
                                         </p>
                                     </div>
                                     <div class="framer-xyc6yh" data-framer-name="Link" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy">
-                                            <!--$-->
+                                            
                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#why-us">Why Us</a>
-                                            <!--/$-->
+                                            
                                         </p>
                                     </div>
                                     <div class="framer-nqsb1a" data-framer-name="Link" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy">
-                                            <!--$-->
+                                            
                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#faq">FAQ</a>
-                                            <!--/$-->
+                                            
                                         </p>
                                     </div>
                                 </nav>
-                                <!--$-->
+                                
                                 <div class="framer-jwbgh6-container">
-                                    <!--$-->
+                                    
                                     <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://api.whatsapp.com/send/?phone=8801334077132" target="_blank" tabindex="0">
                                         <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                             <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Contact Now</p>
                                         </div>
                                     </a>
-                                    <!--/$-->
+                                    
                                 </div>
-                                <!--/$-->
+                                
                             </div>
                         </div>
                     </div>
@@ -9571,17 +9568,17 @@
                                             </div>
                                         </div>
                                         <div class="framer-oji8ih" data-framer-name="Button">
-                                            <!--$-->
+                                            
                                             <div class="framer-1romxpz-container">
-                                                <!--$-->
+                                                
                                                 <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://api.whatsapp.com/send/?phone=8801334077132" target="_blank" tabindex="0">
                                                     <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Contact Now</p>
                                                     </div>
                                                 </a>
-                                                <!--/$-->
+                                                
                                             </div>
-                                            <!--/$-->
+                                            
                                             <div class="framer-1i4vneg" data-framer-name="Button Label" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-paragraph-spacing:0px;opacity:0.6;transform:none" data-framer-component-type="RichTextContainer">
                                                 <p class="framer-text framer-styles-preset-z9fbpw" data-styles-preset="ssQDFqdWG">For consultation and inquiry</p>
                                             </div>
@@ -9624,17 +9621,17 @@
                                             </div>
                                         </div>
                                         <div class="framer-oji8ih" data-framer-name="Button">
-                                            <!--$-->
+                                            
                                             <div class="framer-1romxpz-container">
-                                                <!--$-->
+                                                
                                                 <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://api.whatsapp.com/send/?phone=8801334077132" target="_blank" tabindex="0">
                                                     <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Contact Now</p>
                                                     </div>
                                                 </a>
-                                                <!--/$-->
+                                                
                                             </div>
-                                            <!--/$-->
+                                            
                                             <div class="framer-1i4vneg" data-framer-name="Button Label" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-paragraph-spacing:0px;opacity:0.6;transform:none" data-framer-component-type="RichTextContainer">
                                                 <p class="framer-text framer-styles-preset-z9fbpw" data-styles-preset="ssQDFqdWG">For consultation and inquiry</p>
                                             </div>
@@ -9677,17 +9674,17 @@
                                             </div>
                                         </div>
                                         <div class="framer-oji8ih" data-framer-name="Button">
-                                            <!--$-->
+                                            
                                             <div class="framer-1romxpz-container">
-                                                <!--$-->
+                                                
                                                 <a class="framer-jbteF framer-ZrwGy framer-h1hg18 framer-v-h1hg18 framer-fxatwe" data-framer-name="Default" data-reset="button" style="--border-bottom-width:0px;--border-color:rgba(0, 0, 0, 0);--border-left-width:0px;--border-right-width:0px;--border-style:solid;--border-top-width:0px;background:linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;box-shadow:none;height:100%;width:100%;opacity:1" href="https://api.whatsapp.com/send/?phone=8801334077132" target="_blank" tabindex="0">
                                                     <div class="framer-1j97aym" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24));--framer-link-text-color:rgb(0, 153, 255);--framer-link-text-decoration:underline;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-vckwzw" data-styles-preset="n539NTQS9" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-328d526d-52b3-499c-854f-6f2f938de898, rgb(24, 24, 24)))">Contact Now</p>
                                                     </div>
                                                 </a>
-                                                <!--/$-->
+                                                
                                             </div>
-                                            <!--/$-->
+                                            
                                             <div class="framer-1i4vneg" data-framer-name="Button Label" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--framer-paragraph-spacing:0px;opacity:0.6;transform:none" data-framer-component-type="RichTextContainer">
                                                 <p class="framer-text framer-styles-preset-z9fbpw" data-styles-preset="ssQDFqdWG">For consultation and inquiry</p>
                                             </div>
@@ -9715,7 +9712,7 @@
                                 <div class="framer-1fjl08z" data-framer-name="container">
                                     <div class="framer-1xen635" data-framer-name="text-content">
                                         <div class="framer-ml00gz" data-framer-name="logo &amp; slogan">
-                                            <!--$-->
+                                            
                                             <a class="framer-zbwhl framer-b4e5gq" data-framer-name="logo-container" href="./" data-framer-page-link-current="true">
                                                 <div data-framer-component-type="SVG" data-framer-name="logo" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-mr5qa4" aria-hidden="true">
                                                     <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
@@ -9728,7 +9725,7 @@
                                                     <p style="--font-selector:R0Y7UGx1cyBKYWthcnRhIFNhbnMtNjAw;--framer-font-family:&quot;Plus Jakarta Sans&quot;, &quot;Plus Jakarta Sans Placeholder&quot;, sans-serif;--framer-font-size:24px;--framer-font-weight:600;--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))" class="framer-text">Proofmoor</p>
                                                 </div>
                                             </a>
-                                            <!--/$-->
+                                            
                                             <div class="framer-1iqph6a" data-framer-name="Elevate Your Brand" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-1lwpl3i:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                 <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-color:var(--extracted-1lwpl3i, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">Elevate Your Brand</h5>
                                             </div>
@@ -9741,30 +9738,30 @@
                                                 <nav class="framer-o7wqnf" data-framer-name="links">
                                                     <div class="framer-7my2ac" data-framer-name="Home" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                            <!--$-->
+                                                            
                                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./" data-framer-page-link-current="true">Home</a>
-                                                            <!--/$-->
+                                                            
                                                         </p>
                                                     </div>
                                                     <div class="framer-101eukp" data-framer-name="About" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                            <!--$-->
+                                                            
                                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#about-us">About Us</a>
-                                                            <!--/$-->
+                                                            
                                                         </p>
                                                     </div>
                                                     <div class="framer-1w32985" data-framer-name="Project" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                            <!--$-->
+                                                            
                                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#services">Service</a>
-                                                            <!--/$-->
+                                                            
                                                         </p>
                                                     </div>
                                                     <div class="framer-5iwhxz" data-framer-name="Project" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                            <!--$-->
+                                                            
                                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#faq">FaQ</a>
-                                                            <!--/$-->
+                                                            
                                                         </p>
                                                     </div>
                                                 </nav>
@@ -9784,9 +9781,9 @@
                                                         </div>
                                                         <div class="framer-1s3xrbw" data-framer-name="+1 4212 223" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                                <!--$-->
+                                                                
                                                                 <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="tel:" target="_blank" rel="noopener">+1 4212 223</a>
-                                                                <!--/$-->
+                                                                
                                                             </p>
                                                         </div>
                                                     </div>
@@ -9800,13 +9797,13 @@
                                                         </div>
                                                     <div class="framer-1ktwgzr" data-framer-name="Madhabdi, Dhaka Division" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                                <!--$-->
+                                                                
                                                                 <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="https://goo.gl/maps/ptyMwXAdjXoC3Kmv5" target="_blank" rel="noopener">Madhabdi, Dhaka Division</a>
-                                                                <!--/$-->
+                                                                
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <!-- Custom email row inserted by ChatGPT -->
+                                                    
                                                     <div class="custom-email-row" style="display:flex;align-items:center;gap:12px;margin-top:8px;">
                                                         <div class="email-icon-box" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.6);border-radius:6px;">
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -9815,7 +9812,7 @@
                                                         </div>
                                                         <a href="mailto:mail@proofmoor.com" style="color:white;text-decoration:none;font-size:16px;">mail@proofmoor.com</a>
                                                     </div>
-                                                    <!-- Added custom email row below the location -->
+                                                    
                                                     <div class="framer-eg4xpl" data-framer-name="email-custom" style="display:none;">
                                                         <div data-framer-component-type="SVG" data-framer-name="Message" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-13d6sxm" aria-hidden="true">
                                                             <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
@@ -9826,9 +9823,9 @@
                                                         </div>
                                                         <div class="framer-nn00vs" data-framer-name="custom-email" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                                <!--$-->
+                                                                
                                                                 <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="mailto:mail@proofmoor.com" target="_blank" rel="noopener">mail@proofmoor.com</a>
-                                                                <!--/$-->
+                                                                
                                                             </p>
                                                         </div>
                                                     </div>
@@ -9842,9 +9839,9 @@
                                                         </div>
                                                         <div class="framer-nn00vs" data-framer-name="carepoint@domain.com" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                                <!--$-->
+                                                                
                                                                 <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="mailto:" target="_blank" rel="noopener">mail@proofmoor.com</a>
-                                                                <!--/$-->
+                                                                
                                                             </p>
                                                         </div>
                                                     </div>
@@ -9877,7 +9874,7 @@
                                 <div class="framer-1fjl08z" data-framer-name="container">
                                     <div class="framer-1xen635" data-framer-name="text-content">
                                         <div class="framer-ml00gz" data-framer-name="logo &amp; slogan">
-                                            <!--$-->
+                                            
                                             <a class="framer-zbwhl framer-b4e5gq" data-framer-name="logo-container" href="./" data-framer-page-link-current="true">
                                                 <div data-framer-component-type="SVG" data-framer-name="logo" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-mr5qa4" aria-hidden="true">
                                                     <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
@@ -9890,7 +9887,7 @@
                                                     <p style="--font-selector:R0Y7UGx1cyBKYWthcnRhIFNhbnMtNjAw;--framer-font-family:&quot;Plus Jakarta Sans&quot;, &quot;Plus Jakarta Sans Placeholder&quot;, sans-serif;--framer-font-size:24px;--framer-font-weight:600;--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))" class="framer-text">Proofmoor</p>
                                                 </div>
                                             </a>
-                                            <!--/$-->
+                                            
                                             <div class="framer-1iqph6a" data-framer-name="Elevate Your Brand" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-1lwpl3i:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                 <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-color:var(--extracted-1lwpl3i, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">Elevate Your Brand</h5>
                                             </div>
@@ -9903,30 +9900,30 @@
                                                 <nav class="framer-o7wqnf" data-framer-name="links">
                                                     <div class="framer-7my2ac" data-framer-name="Home" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                            <!--$-->
+                                                            
                                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./" data-framer-page-link-current="true">Home</a>
-                                                            <!--/$-->
+                                                            
                                                         </p>
                                                     </div>
                                                     <div class="framer-101eukp" data-framer-name="About" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                            <!--$-->
+                                                            
                                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#about-us">About Us</a>
-                                                            <!--/$-->
+                                                            
                                                         </p>
                                                     </div>
                                                     <div class="framer-1w32985" data-framer-name="Project" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                            <!--$-->
+                                                            
                                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#services">Service</a>
-                                                            <!--/$-->
+                                                            
                                                         </p>
                                                     </div>
                                                     <div class="framer-5iwhxz" data-framer-name="Project" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                            <!--$-->
+                                                            
                                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#faq">FaQ</a>
-                                                            <!--/$-->
+                                                            
                                                         </p>
                                                     </div>
                                                 </nav>
@@ -9946,9 +9943,9 @@
                                                         </div>
                                                         <div class="framer-1s3xrbw" data-framer-name="+1 4212 223" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                                <!--$-->
+                                                                
                                                                 <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="tel:" target="_blank" rel="noopener">+1 4212 223</a>
-                                                                <!--/$-->
+                                                                
                                                             </p>
                                                         </div>
                                                     </div>
@@ -9962,13 +9959,13 @@
                                                         </div>
                                                         <div class="framer-1ktwgzr" data-framer-name="Madhabdi, Dhaka Division" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                                <!--$-->
+                                                                
                                                                 <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="https://goo.gl/maps/ptyMwXAdjXoC3Kmv5" target="_blank" rel="noopener">Madhabdi, Dhaka Division</a>
-                                                                <!--/$-->
+                                                                
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <!-- Custom email row inserted by ChatGPT -->
+                                                    
                                                     <div class="custom-email-row" style="display:flex;align-items:center;gap:12px;margin-top:8px;">
                                                         <div class="email-icon-box" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.6);border-radius:6px;">
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -9987,9 +9984,9 @@
                                                         </div>
                                                         <div class="framer-nn00vs" data-framer-name="carepoint@domain.com" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                                <!--$-->
+                                                                
                                                                 <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="mailto:" target="_blank" rel="noopener">mail@proofmoor.com</a>
-                                                                <!--/$-->
+                                                                
                                                             </p>
                                                         </div>
                                                     </div>
@@ -10022,7 +10019,7 @@
                                 <div class="framer-1fjl08z" data-framer-name="container">
                                     <div class="framer-1xen635" data-framer-name="text-content">
                                         <div class="framer-ml00gz" data-framer-name="logo &amp; slogan">
-                                            <!--$-->
+                                            
                                             <a class="framer-zbwhl framer-b4e5gq" data-framer-name="logo-container" href="./" data-framer-page-link-current="true">
                                                 <div data-framer-component-type="SVG" data-framer-name="logo" style="image-rendering:pixelated;flex-shrink:0;fill:rgba(0,0,0,1);color:rgba(0,0,0,1)" class="framer-mr5qa4" aria-hidden="true">
                                                     <div class="svgContainer" style="width:100%;height:100%;aspect-ratio:inherit">
@@ -10035,7 +10032,7 @@
                                                     <p style="--font-selector:R0Y7UGx1cyBKYWthcnRhIFNhbnMtNjAw;--framer-font-family:&quot;Plus Jakarta Sans&quot;, &quot;Plus Jakarta Sans Placeholder&quot;, sans-serif;--framer-font-size:24px;--framer-font-weight:600;--framer-text-alignment:center;--framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))" class="framer-text">Proofmoor</p>
                                                 </div>
                                             </a>
-                                            <!--/$-->
+                                            
                                             <div class="framer-1iqph6a" data-framer-name="Elevate Your Brand" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-1lwpl3i:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                 <h5 class="framer-text framer-styles-preset-144ivnp" data-styles-preset="KcUpCwhm3" style="--framer-text-color:var(--extracted-1lwpl3i, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">Elevate Your Brand</h5>
                                             </div>
@@ -10048,30 +10045,30 @@
                                                 <nav class="framer-o7wqnf" data-framer-name="links">
                                                     <div class="framer-7my2ac" data-framer-name="Home" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                            <!--$-->
+                                                            
                                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./" data-framer-page-link-current="true">Home</a>
-                                                            <!--/$-->
+                                                            
                                                         </p>
                                                     </div>
                                                     <div class="framer-101eukp" data-framer-name="About" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                            <!--$-->
+                                                            
                                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#about-us">About Us</a>
-                                                            <!--/$-->
+                                                            
                                                         </p>
                                                     </div>
                                                     <div class="framer-1w32985" data-framer-name="Project" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                            <!--$-->
+                                                            
                                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#services">Service</a>
-                                                            <!--/$-->
+                                                            
                                                         </p>
                                                     </div>
                                                     <div class="framer-5iwhxz" data-framer-name="Project" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                         <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                            <!--$-->
+                                                            
                                                             <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="./#faq">FaQ</a>
-                                                            <!--/$-->
+                                                            
                                                         </p>
                                                     </div>
                                                 </nav>
@@ -10091,9 +10088,9 @@
                                                         </div>
                                                         <div class="framer-1s3xrbw" data-framer-name="+1 4212 223" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                                <!--$-->
+                                                                
                                                                 <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="tel:" target="_blank" rel="noopener">+1 4212 223</a>
-                                                                <!--/$-->
+                                                                
                                                             </p>
                                                         </div>
                                                     </div>
@@ -10107,13 +10104,13 @@
                                                         </div>
                                                         <div class="framer-1ktwgzr" data-framer-name="Madhabdi, Dhaka Division" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                                <!--$-->
+                                                                
                                                                 <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="https://goo.gl/maps/ptyMwXAdjXoC3Kmv5" target="_blank" rel="noopener">Madhabdi, Dhaka Division</a>
-                                                                <!--/$-->
+                                                                
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <!-- Custom email row inserted by ChatGPT -->
+                                                    
                                                     <div class="custom-email-row" style="display:flex;align-items:center;gap:12px;margin-top:8px;">
                                                         <div class="email-icon-box" style="width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.6);border-radius:6px;">
                                                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -10132,9 +10129,9 @@
                                                         </div>
                                                         <div class="framer-nn00vs" data-framer-name="carepoint@domain.com" style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;--extracted-r6o4lv:var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255));--framer-paragraph-spacing:0px;transform:none" data-framer-component-type="RichTextContainer">
                                                             <p class="framer-text framer-styles-preset-1ftma7d" data-styles-preset="tjQcKJwyy" style="--framer-text-color:var(--extracted-r6o4lv, var(--token-7bc77d28-260e-4b84-92a3-3084b520b0ce, rgb(255, 255, 255)))">
-                                                                <!--$-->
+                                                                
                                                                 <a class="framer-text framer-styles-preset-1arus3g" data-styles-preset="KlZQ1I1xC" href="mailto:" target="_blank" rel="noopener">mail@proofmoor.com</a>
-                                                                <!--/$-->
+                                                                
                                                             </p>
                                                         </div>
                                                     </div>
@@ -10159,7 +10156,7 @@
                 </div>
             </div>
             <div id="template-overlay"></div>
-            <!--/$-->
+            
         </div>
         <script>
             ( () => {
@@ -11350,7 +11347,7 @@
                         <stop offset="1" stop-color="white" stop-opacity="0.3"/>
                     </linearGradient>
                     <linearGradient id="svg-372153595_5561_paint2_linear_14_396" x1="200.8" y1="224.15" x2="418" y2="434.262" gradientUnits="userSpaceOnUse">
-                        <!-- Use our new brand blue (#005DFB) instead of the original purple gradient -->
+                        
                         <stop stop-color="#005DFB"/>
                         <stop offset="0.394253" stop-color="#005DFB"/>
                         <stop offset="1" stop-color="white"/>
@@ -11908,7 +11905,7 @@
                         <stop offset="1" stop-color="white" stop-opacity="0.3"/>
                     </linearGradient>
                     <linearGradient id="svg-540191814_3511_paint1_linear_19_205" x1="29.1" y1="30.6292" x2="81.1" y2="87.0292" gradientUnits="userSpaceOnUse">
-                        <!-- Replace purple gradient stops with the new brand blue -->
+                        
                         <stop stop-color="#005DFB"/>
                         <stop offset="0.682292" stop-color="#005DFB"/>
                         <stop offset="1" stop-color="white"/>
@@ -12059,7 +12056,7 @@
                         <stop stop-color="white"/>
                         <stop offset="1" stop-color="white" stop-opacity="0.3"/>
                     </linearGradient>
-                    <!-- Adjust the question mark circle gradient to use our brand blue instead of the original purple -->
+                    
                     <linearGradient id="svg-563245607_6139_paint2_linear_14_728" x1="239.5" y1="169.929" x2="346.5" y2="127.429" gradientUnits="userSpaceOnUse">
                         <stop stop-color="#005DFB"/>
                         <stop offset="0.535349" stop-color="#005DFB"/>
@@ -12261,8 +12258,8 @@
                 <path d="M0 1L1360 1.00012" stroke="white"/>
             </svg>
         </div>
-        <!-- Start of bodyEnd -->
-        <!-- End of bodyEnd -->
+        
+        
     <script>
         // User customization: force hero headline to "Proof Empowers Every Connection"
         (function() {
@@ -12347,9 +12344,7 @@
         })();
     </script>
 
-    <!-- Trigger the custom hero contact button insertion after hydration.  Even if
-         other scripts encounter errors, this lightweight fallback ensures the
-         button is placed in the hero section once the DOM is fully loaded. -->
+    
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
@@ -12363,11 +12358,7 @@
         }, 1500);
       });
     </script>
-    <!-- Force all Framer button anchors to open the WhatsApp link on click.
-         This script attaches a click handler to every anchor with the
-         data-reset="button" attribute, ensuring that clicks open the
-         WhatsApp chat in a new tab. It runs repeatedly for a few seconds
-         after page load to capture dynamically inserted buttons. -->
+    
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const WA_LINK_ALL = 'https://api.whatsapp.com/send/?phone=8801334077132';
@@ -12398,7 +12389,7 @@
         }, 300);
       });
     </script>
-    <!-- Replace the services section heading and remove its "Services" label once Framer content loads -->
+    
     <script>
       (function() {
         document.addEventListener('DOMContentLoaded', function() {
@@ -12524,15 +12515,7 @@
       })();
     </script>
 
-    <!-- Ensure WhatsApp contact links always open in a new tab.  This helper
-         defines a global openWhatsApp() function and attaches an onclick
-         handler to every anchor whose href matches our WhatsApp API URL.
-         Some Framer-generated elements prevent clicks from propagating
-         correctly, so binding an inline handler here adds an additional
-         safeguard.  The handler prevents the default navigation and
-         explicitly opens the WhatsApp link in a new tab.  Place this
-         script after the previous custom scripts to guarantee it runs
-         once the DOM has been updated. -->
+    
     <script>
       function openWhatsApp() {
         // Open the WhatsApp chat in a new tab and return false to
@@ -12556,14 +12539,7 @@
       });
     </script>
 
-    <!-- Create a fixed-position overlay over any visible "Contact Now" button.  Some
-         Framer elements use nested layers that swallow pointer events on the
-         button itself.  This helper searches for elements whose trimmed
-         text content is exactly "Contact Now", computes their bounding
-         rectangles relative to the viewport, and inserts an invisible
-         <a> element on top of each.  The overlay forwards clicks to the
-         WhatsApp link.  The function runs on load and again after a short
-         delay to capture lazy‑loaded components. -->
+    
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const WA_URL = 'https://api.whatsapp.com/send/?phone=8801334077132';
@@ -12612,11 +12588,7 @@
       });
     </script>
 
-    <!-- Override the testimonial text in the rotating cards.  Framer may hydrate
-         testimonial content from remote sources at runtime, so we poll the
-         DOM shortly after load and replace any paragraph that contains the
-         original migration testimony with the new Proofmoor review.  The
-         replacement uses <br> tags to preserve intentional line breaks. -->
+    
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const newTestimonial = '"Im really impressed Proofmoor profile verification service. The<br>process was quick, smooth, and totally hassle-free. My profile got verified on time!"';
@@ -12638,8 +12610,8 @@
         }, 300);
       });
     </script>
-    <!-- Removed obsolete bullet replacement script. The custom feature list is defined directly in the markup -->
-    <!-- Inject custom social media verification service list after Framer hydrates the page -->
+    
+    
     <script>
       (function() {
         // Our list of services
@@ -12722,7 +12694,7 @@
       })();
     </script>
 
-    <!-- Remove the entire "why-us" section once Framer content loads -->
+    
     <script>
       (function() {
         document.addEventListener('DOMContentLoaded', function() {
@@ -12744,7 +12716,7 @@
       })();
     </script>
     
-    <!-- Custom script to update the location display and link -->
+    
     <script>
       (function() {
         const newLocationName = 'Madhabdi, Dhaka Division';
@@ -12824,72 +12796,48 @@
       })();
     </script>
     
-    <!-- ===================================================== -->
-    <!-- Custom editable content container and override script  -->
-    <!--
-         This section defines editable text that will replace
-         dynamically rendered copy from the Framer site. To update
-         the wording on your site, simply edit the text inside the
-         elements below. Do not remove the id attributes—those
-         identifiers are used by the JavaScript below to locate
-         and apply your changes.
-
-         Note: this container is hidden from view via CSS so it
-         doesn't affect the layout of your site.
-    -->
+    
+    
+    
     <div id="custom-content" style="display:none">
-      <!-- Hero section text: split into two lines -->
+      
       <div id="hero-heading-line1">Proof Empowers</div>
       <div id="hero-heading-line2">Every Connection</div>
       <div id="hero-tagline">A trusted global agency for social media verification, account recovery, and brand protection.</div>
-      <!-- About section heading and paragraph -->
+      
       <div id="about-heading">About Our Social Media Security &amp; Brand Protection Solutions</div>
       <div id="about-paragraph">At Proofmoor, we are dedicated to protecting and empowering your digital presence. With years of expertise in social media verification, account recovery, and brand protection, our team ensures your reputation stays secure and your growth unstoppable.</div>
-      <!-- Services section heading -->
+      
       <div id="services-heading">Explore Our Services</div>
-      <!-- Cloud services card titles: list of titles separated by semicolons. Edit this text to change the labels shown inside each service card in the “Explore Our Services” section. -->
-      <!-- Updated service labels for each card. Each service name is separated by a semicolon and a space so the
-           JavaScript in this document can split them correctly and assign them to the corresponding cards. -->
+      
+      
       <div id="cloud-services-items">Facebook &amp; Instagram Account Verification; Facebook &amp; Instagram Page Verification; WhatsApp Business Verification; Ads Account Verification; Business Manager Verification; Suspended ID Recovery</div>
-      <!-- Contact information -->
+      
       <div id="phone-number">+8801334077132</div>
       <div id="whatsapp-number">8801334077132</div>
-      <!-- Location information -->
+      
       <div id="location-name">Madhabdi, Dhaka Division</div>
       <div id="location-link">https://goo.gl/maps/ptyMwXAdjXoC3Kmv5</div>
-      <!-- Feature/Services list items: separate entries with a semicolon (;) -->
+      
       <div id="services-items">Facebook &amp; Instagram Page Verification; Business Manager Verification; Ads Account Verification; WhatsApp Business Verification; Hacked ID Recovery; Suspended ID Recovery</div>
-      <!-- Additional editable fields -->
-      <!-- Contact email shown in the footer. Use a full email address here (e.g., info@example.com). -->
+      
+      
       <div id="contact-email">mail@proofmoor.com</div>
-      <!-- Footer headline (e.g. "Recover. Verify. Grow.") displayed in the large type above the footer. -->
+      
       <div id="footer-headline">Recover. Verify. Grow.</div>
-      <!-- Footer slogan beneath the logo in the footer. Use simple text without quotes. -->
-      <!--
-        The footer slogan is split into multiple lines by default when the
-        available width is narrow.  To keep the entire phrase on a single line
-        we've replaced the normal spaces with non‑breaking spaces (`&nbsp;`).
-        This prevents the browser from wrapping at those points.  The string
-        displayed to the user remains visually the same but will no longer
-        wrap mid‑phrase.
-      -->
+      
+      
       <div id="footer-slogan" style="white-space: nowrap; font-size: 16px;">Empowering your brand's</div>
-      <!-- Call‑to‑action heading inside the coloured banner section. -->
+      
       <div id="cta-heading">Recover, Verify &amp; Protect All In One Place !</div>
-      <!-- Call‑to‑action subheading beneath the main heading in the coloured banner section. -->
+      
       <div id="cta-subheading">Secure your online identity with our expert verification &amp; recovery services.</div>
-      <!-- Call‑to‑action note under the CTA button. -->
+      
       <div id="cta-note">For consultation and inquiry</div>
     <div id="footer-copyright">copyright 2025 @proofmoor All Right Reserved</div>
     </div>
 
-    <!--
-      Override script: reads values from the custom-content container
-      defined above and applies them to the appropriate Framer
-      components. This allows you to change the text on your page
-      without touching any JavaScript. Simply edit the inner text
-      of the elements in the custom-content div and reload the page.
-    -->
+    
     <script>
       (function() {
         document.addEventListener('DOMContentLoaded', function() {
@@ -13334,7 +13282,29 @@
               }
               // Escape backslashes and quotes for inclusion in a CSS content string
               const safeHeadline = footerHeadline.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/'/g, "\\'");
-              styleEl.textContent = '[data-framer-name="Power Your Business"]::after { content: "' + safeHeadline + '"; font-size: 64px; font-weight: 700; display:block; color: rgb(255, 255, 255); line-height: 1.2; text-shadow: 0 0 20px rgba(0, 0, 0, 0.8); filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.9)); }';
+              // Apply a gradient fill and transparent text colour to mimic the reference shadow effect.
+              // The gradient transitions from white at the top through light grey to a darker grey at the bottom.
+              // The -webkit-background-clip and background-clip properties ensure the gradient fills the text only.
+              // The text-shadow and filter properties retain the soft outer glow used elsewhere on the site.
+              styleEl.textContent =
+                '[data-framer-name="Power Your Business"]::after { ' +
+                'content: "' + safeHeadline + '"; ' +
+                'font-size: 64px; ' +
+                'font-weight: 700; ' +
+                'display: block; ' +
+                // Use a transparent text colour so the gradient shows through.
+                'color: transparent; ' +
+                // Define a vertical gradient from white to dark grey to simulate the interior shading seen in the reference image.
+                // Modify the gradient to keep white dominant for most of the text, matching the reference image.
+                'background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 95%, rgba(180,180,180,1) 97%, rgba(40,40,40,1) 100%); ' +
+                '-webkit-background-clip: text; ' +
+                'background-clip: text; ' +
+                '-webkit-text-fill-color: transparent; ' +
+                'line-height: 1.2; ' +
+                // Keep the soft black halo behind the text for contrast on dark backgrounds.
+                'text-shadow: 0 0 20px rgba(0, 0, 0, 0.8); ' +
+                'filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.9)); ' +
+                '}';
             }
 
             // Update footer slogan using CSS override
@@ -13400,38 +13370,12 @@
         });
       })();
     </script>
-    <!-- Script to update the card titles in the Explore Our Services section based on custom-content.
-         Edit the text inside #cloud-services-items (semicolon-separated) to change the labels shown
-         for the infrastructure/platform/cloud service cards. -->
-    <!-- The dynamic card title script is disabled. The headings defined in the HTML above are used directly. -->
-    <!--
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const cloudRaw = (document.getElementById('cloud-services-items') || { textContent: '' }).textContent.trim();
-        const cloudItems = cloudRaw ? cloudRaw.split(';').map(s => s.trim()).filter(Boolean) : [];
-        let tries = 0;
-        const interval = setInterval(() => {
-          // Locate all card headings inside the services section
-          const cards = document.querySelectorAll('#services [data-framer-name="card"] h5');
-          if (cards.length > 0 || tries > 20) {
-            // Update each heading with the corresponding item text
-            cloudItems.forEach((item, i) => {
-              if (cards[i]) {
-                cards[i].textContent = item;
-              }
-            });
-            clearInterval(interval);
-          }
-          tries++;
-        }, 500);
-      });
-    </script>
-    -->
-    <!-- Floating WhatsApp button -->
+    
+    
+    
+    
     <a href="https://api.whatsapp.com/send/?phone=8801334077132" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-      <!-- WhatsApp icon drawn as an inline SVG with currentColor fill.
-           Using an inline SVG avoids external dependencies and ensures the icon
-           inherits the colour defined in the button's CSS. -->
+      
       <img src="images/wp.png" alt="WhatsApp logo" style="width:28px;height:28px;" />
     </a>
   </body>
